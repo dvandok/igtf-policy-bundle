@@ -25,7 +25,7 @@ AVAILABLE_CA=${AVAILABLE_CA#, }
 # yes: install all certificates with the exceptions listed in exclude_ca
 # no: only install the certificates in include_ca.
 db_get igtf-policy-@PROFILE@/install_profile
-if [ "$RET" = yes ]; then
+if [ "$RET" = true ]; then
     db_subst igtf-policy-@PROFILE@/exclude_ca exclude_ca "$AVAILABLE_CA"
     db_input medium igtf-policy-@PROFILE@/exclude_ca || true
 else
