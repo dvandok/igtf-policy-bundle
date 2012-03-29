@@ -7,16 +7,14 @@ set -e
 
 db_capb backup
 
-profile=@PROFILE@
-
-db_input medium igtf-policy-${profile}/install_profile || true
+db_input medium igtf-policy-@PROFILE@/install_profile || true
 
 db_go
 
 # bother with possible in/exclusions
 # fetch the list of CAs to choose
 AVAILABLE_CA=
-for f in /usr/share/igtf-policy/${profile}/*.pem ; do
+for f in /usr/share/igtf-policy/@PROFILE@/*.pem ; do
     ca=`basename ${f%.*}` 
     AVAILABLE_CA="$AVAILABLE_CA, $ca"
 done
@@ -26,13 +24,13 @@ AVAILABLE_CA=${AVAILABLE_CA#, }
 # The mode of operation is either:
 # yes: install all certificates with the exceptions listed in exclude_ca
 # no: only install the certificates in include_ca.
-db_get igtf-policy-${profile}/install_profile
+db_get igtf-policy-@PROFILE@/install_profile
 if [ "$RET" = yes ]; then
-    db_subst igtf-policy-${profile}/exclude_ca exclude_ca "$AVAILABLE_CA"
-    db_input medium igtf-policy-${profile}/exclude_ca || true
+    db_subst igtf-policy-@PROFILE@/exclude_ca exclude_ca "$AVAILABLE_CA"
+    db_input medium igtf-policy-@PROFILE@/exclude_ca || true
 else
-    db_subst igtf-policy-${profile}/include_ca include_ca "$AVAILABLE_CA"
-    db_input high igtf-policy-${profile}/include_ca || true
+    db_subst igtf-policy-@PROFILE@/include_ca include_ca "$AVAILABLE_CA"
+    db_input high igtf-policy-@PROFILE@/include_ca || true
 fi
 
 db_go
