@@ -50,6 +50,9 @@ profile_files:
 	    sed -e "s/@PROFILE@/$$profile/g" < prerm.in > igtf-policy-$$profile.prerm ; \
 	    sed -e "s/@PROFILE@/$$profile/g" < templates.in > igtf-policy-$$profile.templates ; \
 	done
+	for profile in classic mics slcs unaccredited experimental; do \
+	    sed -e "s/@PROFILE@/$$profile/g" < install.in > igtf-policy-$$profile.install ; \
+	done
 
 # The .info files aren't GNU Info files
 override_dh_installinfo:
