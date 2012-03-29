@@ -20,8 +20,12 @@ for f in /usr/share/igtf-policy/${profile}/*.pem ; do
     ca=`basename ${f%.*}` 
     AVAILABLE_CA="$AVAILABLE_CA, $ca"
 done
+# remove leading comma
 AVAILABLE_CA=${AVAILABLE_CA#, }
 
+# The mode of operation is either:
+# yes: install all certificates with the exceptions listed in exclude_ca
+# no: only install the certificates in include_ca.
 db_get igtf-policy-${profile}/install_profile
 if [ "$RET" = yes ]; then
     db_subst igtf-policy-${profile}/exclude_ca exclude_ca "$AVAILABLE_CA"
