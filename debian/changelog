@@ -1,5 +1,5 @@
-igtf-policy-bundle (1.45-1) unstable; urgency=low
+igtf-policy-bundle (1.46-1) unstable; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release (Closes: #666229)
 
  -- Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>  Wed, 28 Mar 2012 01:42:49 +0200
