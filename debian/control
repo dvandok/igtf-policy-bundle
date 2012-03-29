@@ -12,7 +12,7 @@ Homepage: http://www.igtf.net/
 Package: igtf-policy-classic
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: fetch-crl
+Recommends: fetch-crl, openssl
 Suggests: ca-certificates
 Description: IGTF classic profile for Authority Root Certificates
  The International Grid Trust Federation (IGTF) maintains a common
@@ -27,7 +27,7 @@ Description: IGTF classic profile for Authority Root Certificates
 Package: igtf-policy-mics
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: fetch-crl
+Recommends: fetch-crl, openssl
 Suggests: ca-certificates
 Description: IGTF MICS profile for Authority Root Certificates
  The International Grid Trust Federation (IGTF) maintains a common
@@ -43,7 +43,7 @@ Description: IGTF MICS profile for Authority Root Certificates
 Package: igtf-policy-slcs
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: fetch-crl
+Recommends: fetch-crl, openssl
 Suggests: ca-certificates
 Description: IGTF SLCS profile for Authority Root Certificates
  The International Grid Trust Federation (IGTF) maintains a common
@@ -59,6 +59,7 @@ Description: IGTF SLCS profile for Authority Root Certificates
 Package: igtf-policy-unaccredited
 Architecture: all
 Depends: ${misc:Depends}
+Recommends: openssl
 Suggests: ca-certificates
 Description: IGTF unaccredited Authority Root Certificates
  The International Grid Trust Federation (IGTF) maintains a common
@@ -74,6 +75,7 @@ Description: IGTF unaccredited Authority Root Certificates
 Package: igtf-policy-experimental
 Architecture: all
 Depends: ${misc:Depends}
+Recommends: openssl
 Suggests: ca-certificates
 Description: IGTF experimental Authority Root Certificates
  The International Grid Trust Federation (IGTF) maintains a common
