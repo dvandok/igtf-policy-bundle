@@ -23,7 +23,7 @@ in_list() {
 
 # check if $1 is supposed to be included.
 ca_included() {
-    if [ "$install_profile" = yes ]; then
+    if [ "$install_profile" = true ]; then
 	if in_list "$1" "$excluded" ; then
 	    return 1
 	else
