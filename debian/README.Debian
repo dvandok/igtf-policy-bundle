@@ -6,8 +6,8 @@ The IGTF trust anchors are by default installed in
 for many pieces of grid middleware. However, in Debian this location
 would make these files into conffiles which have a different status
 than normal files, and therefore they are installed under
-usr/share/ca-certificates instead and symlinked to
-/etc/grid-security/certificates when necessary.
+usr/share/ca-certificates/igtf-*/ and /usr/share/igtf-policy instead
+and symlinked to /etc/grid-security/certificates on configuration.
 
 Each CA certificate falls in on of three 'profiles' to distinguish
 different policies under which these CAs operate. For more information
@@ -17,39 +17,28 @@ see http://www.eugridpma.org/guidelines/.
  - MICS (Member Integrated Certificate Service)
  - SLCS (Short Lived Credential Service)
 
-Configuration of which certificates are installed in
-/etc/grid-security/certificates is done by the configuration file
-/etc/grid-security/igtf-policy-${profile}.conf. This file should define
-three variables (in Bourne Shell syntax):
+The packages are split according to these profiles, so it is very easy
+to install just the classic profile.
 
- - install_profile=yes/no
- - include_ca=<list of certificates that should be included>
- - exclude_ca=<list of certificates that should be excluded>
+By default, all of the certificates in the profile are installed in
+/etc/grid-security/certificates, but it is possible to reconfigure this
+with
 
-Depending on the choice for install_profile, either profile_include or
-profile_exclude should be empty, although both could be empty.
+    dpkg-reconfigure igf-policy-classic
 
-certificates and/or profiles, with one entry per line. An entry may be
-prefixed by '!' to explicitly forbid the installation of the
-certificate or profile. When entries for profiles and certificates
-conflict, the choice for the certificate precedes the choice for
-profile. A profile that is not listed is treated as if it had its
-entry negated.
+or setting values in a debconf selection file. The configuration offers
+two choices:
 
-In the simplest case the configuration file just lists the profiles
-that will be used.
+  1. Install all certificates save explicit exceptions
+  2. Install only selected certificates
 
-When additional CAs are installed upon upgrade of this package, their
-inclusion in /etc/grid-security/certificates depends on whether the
-profile to which they belong is selected in the configuration file,
-and the setting of trust_new in /etc/default/ifgt-policy-bundle.
+The packages igtf-policy-unaccredited contain only CAs that are not yet
+or no longer accredited. Their use is not recommended, please be very careful
+to review before trusting any CA in this set.
 
-
-Some cases to consider:
-
-- upgrade of package installs new CA
-  - admin has not made any selection: install new CA according to profile
-  - admin has 
-
+The package igtf-policy-experimental contain CAs that may have use in
+a limited context, e.g. for testing purposes, but offer no guarantees
+in terms of reliability. Do not install this package unless you know
+what you are doing.
 
  -- Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>  Wed, 28 Mar 2012 01:42:49 +0200
