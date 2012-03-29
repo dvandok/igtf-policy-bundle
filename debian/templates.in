@@ -1,7 +1,3 @@
-Template: igtf-policy-@PROFILE@/title
-Type: title
-Description: igtf-policy-@PROFILE@ configuration
-
 Template: igtf-policy-@PROFILE@/install_profile
 Type: select
 Choices: yes, no
