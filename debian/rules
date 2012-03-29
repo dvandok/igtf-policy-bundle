@@ -1,18 +1,25 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
-# Sample debian/rules that uses debhelper.
-# This file was originally written by Joey Hess and Craig Small.
-# As a special exception, when this file is copied by dh-make into a
-# dh-make output file, you may use that output file without restriction.
-# This special exception was added by Craig Small in version 0.37 of dh-make.
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+
+# The IGTF installation bundle installs all profiles in one go,
+# but we'll split them up in separate packages. Most of the metadata
+# goes to /usr/share/igtf-policy/<profile>, but the certs themselves
+# are put in /usr/share/ca-certificates/igtf-<profile> because the
+# ca-certificates package only uses real files. The config, postinst,
+# templates and prerm for the accredited profiles are so alike that
+# they are generated in-line.
+
+
+# the root of the installation tree.
 BASE = /usr/share/igtf-policy
 
 %:
 	dh $@ 
+
 
 override_dh_auto_configure:
 	./configure --prefix=`pwd`/debian/tmp/$(BASE) \
@@ -23,7 +30,7 @@ override_dh_auto_configure:
 	--with-profile=experimental \
 	--with-install="install -m 644"
 
-# override the make install
+
 override_dh_auto_install: profile_files
 	for profile in classic slcs mics unaccredited experimental; do \
 	    mkdir -p debian/tmp/$(BASE)/$$profile ; \
