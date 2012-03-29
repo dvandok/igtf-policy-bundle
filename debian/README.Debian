@@ -1,0 +1,55 @@
+igtf-policy-bundle for Debian
+-----------------------------
+
+The IGTF trust anchors are by default installed in
+/etc/grid-security/certificates; this location is the common standard
+for many pieces of grid middleware. However, in Debian this location
+would make these files into conffiles which have a different status
+than normal files, and therefore they are installed under
+usr/share/ca-certificates instead and symlinked to
+/etc/grid-security/certificates when necessary.
+
+Each CA certificate falls in on of three 'profiles' to distinguish
+different policies under which these CAs operate. For more information
+see http://www.eugridpma.org/guidelines/.
+
+ - Classic
+ - MICS (Member Integrated Certificate Service)
+ - SLCS (Short Lived Credential Service)
+
+Configuration of which certificates are installed in
+/etc/grid-security/certificates is done by the configuration file
+/etc/grid-security/igtf-policy-${profile}.conf. This file should define
+three variables (in Bourne Shell syntax):
+
+ - install_profile=yes/no
+ - include_ca=<list of certificates that should be included>
+ - exclude_ca=<list of certificates that should be excluded>
+
+Depending on the choice for install_profile, either profile_include or
+profile_exclude should be empty, although both could be empty.
+
+certificates and/or profiles, with one entry per line. An entry may be
+prefixed by '!' to explicitly forbid the installation of the
+certificate or profile. When entries for profiles and certificates
+conflict, the choice for the certificate precedes the choice for
+profile. A profile that is not listed is treated as if it had its
+entry negated.
+
+In the simplest case the configuration file just lists the profiles
+that will be used.
+
+When additional CAs are installed upon upgrade of this package, their
+inclusion in /etc/grid-security/certificates depends on whether the
+profile to which they belong is selected in the configuration file,
+and the setting of trust_new in /etc/default/ifgt-policy-bundle.
+
+
+Some cases to consider:
+
+- upgrade of package installs new CA
+  - admin has not made any selection: install new CA according to profile
+  - admin has 
+
+
+ -- Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>  Wed, 28 Mar 2012 01:42:49 +0200

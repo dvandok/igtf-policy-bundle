@@ -1,0 +1,36 @@
+#!/bin/sh
+# $1 = action ('configure' or 'reconfigure')
+# $2 = current-installed-version
+set -e
+
+. /usr/share/debconf/confmodule
+
+db_capb backup
+
+profile=@PROFILE@
+
+db_input medium igtf-policy-${profile}/install_profile || true
+
+db_go
+
+# bother with possible in/exclusions
+# fetch the list of CAs to choose
+AVAILABLE_CA=
+for f in /usr/share/igtf-policy/${profile}/*.pem ; do
+    ca=`basename ${f%.*}` 
+    AVAILABLE_CA="$AVAILABLE_CA, $ca"
+done
+AVAILABLE_CA=${AVAILABLE_CA#, }
+
+db_get igtf-policy-${profile}/install_profile
+if [ "$RET" = yes ]; then
+    db_subst igtf-policy-${profile}/exclude_ca exclude_ca "$AVAILABLE_CA"
+    db_input medium igtf-policy-${profile}/exclude_ca || true
+else
+    db_subst igtf-policy-${profile}/include_ca include_ca "$AVAILABLE_CA"
+    db_input high igtf-policy-${profile}/include_ca || true
+fi
+
+db_go
+
+db_stop

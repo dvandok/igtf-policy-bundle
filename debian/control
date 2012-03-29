@@ -1,0 +1,82 @@
+Source: igtf-policy-bundle
+Section: misc
+Priority: extra
+Maintainer: Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://www.igtf.net/
+#Vcs-Git: git://git.debian.org/collab-maint/igtf-policy-bundle.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/igtf-policy-bundle.git;a=summary
+
+
+Package: igtf-policy-classic
+Architecture: all
+Depends: ${misc:Depends}, openssl
+Recommends: fetch-crl
+Description: IGTF classic profile for Authority Root Certificates
+ The International Grid Trust Federation (IGTF) maintains a common
+ trust base for the benefit of distributed science and research
+ computing infrastructures by maintaining a list of trust anchors, for
+ accredited authorities. The distribution contains root certificates,
+ certificate revocation list (CRL) locations, contact information, and
+ signing policies.
+ .
+ This package contains the trust anchors for the classic profile.
+
+Package: igtf-policy-mics
+Architecture: all
+Depends: ${misc:Depends}, openssl, fetch-crl
+Recommends: fetch-crl
+Description: IGTF MICS profile for Authority Root Certificates
+ The International Grid Trust Federation (IGTF) maintains a common
+ trust base for the benefit of distributed science and research
+ computing infrastructures by maintaining a list of trust anchors, for
+ accredited authorities. The distribution contains root certificates,
+ certificate revocation list (CRL) locations, contact information, and
+ signing policies.
+ .
+ This package contains the trust anchors for the MICS (Member Integrated
+ Credential Services) profile.
+
+Package: igtf-policy-slcs
+Architecture: all
+Depends: ${misc:Depends}, openssl
+Recommends: fetch-crl
+Description: IGTF SLCS profile for Authority Root Certificates
+ The International Grid Trust Federation (IGTF) maintains a common
+ trust base for the benefit of distributed science and research
+ computing infrastructures by maintaining a list of trust anchors, for
+ accredited authorities. The distribution contains root certificates,
+ certificate revocation list (CRL) locations, contact information, and
+ signing policies.
+ .
+ This package contains the trust anchors for the SLCS (Short Lived
+ Credential Services) profile.
+
+Package: igtf-policy-unaccredited
+Architecture: all
+Depends: ${misc:Depends}, openssl, fetch-crl
+Description: IGTF unaccredited Authority Root Certificates
+ The International Grid Trust Federation (IGTF) maintains a common
+ trust base for the benefit of distributed science and research
+ computing infrastructures by maintaining a list of trust anchors, for
+ accredited authorities. The distribution contains root certificates,
+ certificate revocation list (CRL) locations, contact information, and
+ signing policies.
+ .
+ This package contains several unaccredited trust anchors. Use with
+ caution, as they come without any guarantees.
+
+Package: igtf-policy-experimental
+Architecture: all
+Depends: ${misc:Depends}, openssl
+Description: IGTF experimental Authority Root Certificates
+ The International Grid Trust Federation (IGTF) maintains a common
+ trust base for the benefit of distributed science and research
+ computing infrastructures by maintaining a list of trust anchors, for
+ accredited authorities. The distribution contains root certificates,
+ certificate revocation list (CRL) locations, contact information, and
+ signing policies.
+ .
+ This package contains several experimental trust anchors. Use with
+ caution, as they come without any guarantees.

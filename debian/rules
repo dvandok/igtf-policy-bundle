@@ -1,0 +1,48 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Sample debian/rules that uses debhelper.
+# This file was originally written by Joey Hess and Craig Small.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+BASE = /usr/share/igtf-policy
+
+%:
+	dh $@ 
+
+override_dh_auto_configure:
+	./configure --prefix=`pwd`/debian/tmp/$(BASE) \
+	--with-profile=classic \
+	--with-profile=slcs \
+	--with-profile=mics \
+	--with-profile=unaccredited \
+	--with-profile=experimental \
+	--with-install="install -m 644"
+
+# override the make install
+override_dh_auto_install: profile_files
+	for profile in classic slcs mics unaccredited experimental; do \
+	    mkdir -p debian/tmp/$(BASE)/$$profile ; \
+	    mkdir -p debian/tmp/usr/share/ca-certificates/igtf-$$profile ; \
+	    make install-$$profile prefix=`pwd`/debian/tmp/$(BASE)/$$profile ; \
+	    for i in debian/tmp/usr/share/igtf-policy/$$profile/*.pem ; do \
+	        j=/usr/share/ca-certificates/igtf-$$profile/`basename $${i%.pem}`.crt ; \
+	        mv $$i debian/tmp/$$j ; \
+	        ln -s  $$j $$i ; \
+	    done ; \
+	done
+
+profile_files:
+	cd debian && for profile in classic mics slcs; do \
+	    sed -e "s/@PROFILE@/$$profile/g" < config.in > igtf-policy-$$profile.config ; \
+	    sed -e "s/@PROFILE@/$$profile/g" < postinst.in > igtf-policy-$$profile.postinst ; \
+	    sed -e "s/@PROFILE@/$$profile/g" < prerm.in > igtf-policy-$$profile.prerm ; \
+	    sed -e "s/@PROFILE@/$$profile/g" < templates.in > igtf-policy-$$profile.templates ; \
+	done
+
+# The .info files aren't GNU Info files
+override_dh_installinfo:
