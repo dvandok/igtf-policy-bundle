@@ -52,7 +52,7 @@ profile_files:
 	done
 	cd debian && for profile in classic mics slcs unaccredited experimental; do \
 	    sed -e "s/@PROFILE@/$$profile/g" < install.in > igtf-policy-$$profile.install ; \
-	    cp doc.in igtf-policy-$$profile.doc ; \
+	    cp docs.in igtf-policy-$$profile.docs ; \
 	done
 
 # The .info files aren't GNU Info files
