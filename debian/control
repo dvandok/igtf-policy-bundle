@@ -5,7 +5,7 @@ Maintainer: Dennis van Dok <dennisvd@nikhef.nl>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 Homepage: http://www.igtf.net/
-Vcs-Git: git@github.com:dvandok/igtf-policy-bundle.git
+Vcs-Git: git://git@github.com:dvandok/igtf-policy-bundle.git
 Vcs-Browser: https://github.com/dvandok/igtf-policy-bundle
 
 
