@@ -3,6 +3,7 @@ igtf-policy-bundle (1.50-1) unstable; urgency=low
   * New upstream version
   * Include CHANGES file from website
   * Include a README.source file
+  * Update maintainer identity
 
  -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 31 Oct 2012 15:37:31 +0100
 
