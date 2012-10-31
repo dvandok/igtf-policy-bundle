@@ -1,0 +1,13 @@
+igtf-policy for Debian
+----------------------
+
+The sources for this package are obtained from 
+https://dist.eugridpma.info/distribution/igtf/current/.
+
+The CHANGES file, which is not bundled with the tarball,
+is obtained separately from 
+https://dist.eugridpma.info/distribution/igtf/current/CHANGES
+and merged with debian/CHANGES
+
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>, Wed, 31 Oct 2012 15:32:03 +0100
