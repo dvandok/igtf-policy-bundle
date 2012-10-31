@@ -1,7 +1,7 @@
 Source: igtf-policy-bundle
 Section: misc
 Priority: extra
-Maintainer: Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>
+Maintainer: Dennis van Dok <dennisvd@nikhef.nl>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
 Homepage: http://www.igtf.net/
