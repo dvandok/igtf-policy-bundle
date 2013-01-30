@@ -1,3 +1,9 @@
+igtf-policy-bundle (1.52-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 30 Jan 2013 16:30:14 +0100
+
 igtf-policy-bundle (1.50-2) unstable; urgency=low
 
   * Install CHANGES as changelog.gz
