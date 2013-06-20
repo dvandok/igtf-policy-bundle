@@ -1,0 +1,62 @@
+# Translations of the igt-policy debconf template
+# Copyright (C) 2013 Stichting voor Fundamenteel Onderzoek der Materie
+# This file is distributed under the same license as the igt-policy-bundle package.
+# Dennis van Dok <dennisvd@nikhef.nl>, 2013
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: igtf-policy-bundle\n"
+"Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
+"POT-Creation-Date: 2013-06-20 10:51+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates.in:1001
+msgid "Install the IGTF @PROFILE@ CAs in /etc/grid-security/certificates?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../templates.in:1001
+msgid ""
+"This package installs the IGTF CAs in /etc/grid-security/certificates. There "
+"are two ways to deal with these certificates: - yes: install all, except "
+"those in the exclude list - no: install only CAs in the include list. The "
+"include/exclude lists are covered by the next question."
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:2001
+msgid "Certificates to explicitly exclude"
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:2001
+msgid ""
+"Select which certificates should not be installed in /etc/grid-security/"
+"certificates."
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:3001
+msgid "Certificates to explicitly include"
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:3001
+msgid ""
+"Select which certificates should be installed in /etc/grid-security/"
+"certificates."
+msgstr ""

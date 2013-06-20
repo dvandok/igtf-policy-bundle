@@ -2,7 +2,7 @@ Source: igtf-policy-bundle
 Section: misc
 Priority: extra
 Maintainer: Dennis van Dok <dennisvd@nikhef.nl>
-Build-Depends: debhelper (>= 8.0.0)
+Build-Depends: debhelper (>= 8.0.0), po-debconf
 Standards-Version: 3.9.4
 Homepage: http://www.igtf.net/
 Vcs-Git: git://git@github.com:dvandok/igtf-policy-bundle.git
