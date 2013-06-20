@@ -1,7 +1,7 @@
 Template: igtf-policy-@PROFILE@/install_profile
 Type: boolean
 Default: true
-Description: Install the IGTF @PROFILE@ CAs in /etc/grid-security/certificates?
+_Description: Install the IGTF @PROFILE@ CAs in /etc/grid-security/certificates?
  This package installs the IGTF CAs in /etc/grid-security/certificates.
  There are two ways to deal with these certificates:
  - yes: install all, except those in the exclude list
@@ -11,13 +11,13 @@ Description: Install the IGTF @PROFILE@ CAs in /etc/grid-security/certificates?
 Template: igtf-policy-@PROFILE@/exclude_ca
 Type: multiselect
 Choices: ${exclude_ca}
-Description: Certificates to explicitly exclude
+_Description: Certificates to explicitly exclude
  Select which certificates should not be installed in
  /etc/grid-security/certificates.
 
 Template: igtf-policy-@PROFILE@/include_ca
 Type: multiselect
 Choices: ${include_ca}
-Description: Certificates to explicitly include
+_Description: Certificates to explicitly include
  Select which certificates should be installed in
  /etc/grid-security/certificates.
