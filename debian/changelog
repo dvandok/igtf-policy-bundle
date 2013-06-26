@@ -1,3 +1,15 @@
+igtf-policy-bundle (1.54-1) unstable; urgency=low
+
+  * New upstream release:
+    - Extended life time of Grid-KA CA (dd4b34ea) (DE)
+    - Added new CERN hierarchy for CERN IT/IS CA (SHA2 migration) (CH)
+    - Updated metadata for GridGermany DFN-CERT CAs (DE)
+    - Updated contact metadata for KEK (JP)
+    - Updated contact metadata for HKU (HK)
+    - Updated contact metadata for AIST (JP)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 26 Jun 2013 12:42:30 +0200
+
 igtf-policy-bundle (1.53-1) unstable; urgency=low
 
   * New upstream version
