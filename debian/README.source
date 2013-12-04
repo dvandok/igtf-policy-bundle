@@ -9,5 +9,14 @@ is obtained separately from
 https://dist.eugridpma.info/distribution/igtf/current/CHANGES
 and merged with debian/CHANGES
 
+Updating the igtf bundle takes the following simple steps:
 
- -- Dennis van Dok <dennisvd@nikhef.nl>, Wed, 31 Oct 2012 15:32:03 +0100
+   1. go to the igtf-bundle directory
+   2. run uscan --destdir=../build-area
+   3. update debian/changelog
+   4. update the CHANGES file from the website
+      https://dist.eugridpma.info/distribution/igtf/current/CHANGES
+   5. check into git
+   6. run git-buildpackage --git-overlay --git-export-dir=../build-area
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>, Wed,  4 Dec 2013 09:21:44 +0100

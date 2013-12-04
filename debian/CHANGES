@@ -5,6 +5,23 @@ refer to the README.txt file for additional information on installing the
 Distribution and to be informed about important information on distribuion 
 lay-out.
 
+Changes from 1.54 to 1.55
+-------------------------
+(25 November 2013)
+  THIS RELEASE IS THE LAST ONE ALSO TO BE DISTRIBUTED IN SINGLE HASH FORMAT
+
+* New root certificate with extended life time for NorduGrid CA 1f0e8352 (DK)
+* Updated contact metadata for all RENATER Grid-FR related CAs (FR)
+* Updated CRL URL and metadata for IHEP 2013 CA 39d30eba (CN)
+* New root certificates for NCSA CA re-key: MyProxy CA 2013 c36f6349/7aa2b7bd 
+  and Two Factor CA 2013 ca157cee/48c8f10a (US)
+* New root certificate for EGI catch-all CA "SEEGRID-CA-2013" 772dbd1c (GR)
+* Removed AIST Grid CA (JP)
+* Discontinued IUCC CA (6fee79b0) following migration to TCS (IL)
+* Suspended JUnet-CA (b3222f9e) (JO)
+* Removed expired unaccredited CAs (misc)
+* Added unaccredited worthless NL e-Infra Zero tutorial CA 338a3561 (NL)
+
 Changes from 1.53 to 1.54
 -------------------------
 (24 June 2013)
@@ -30,7 +47,7 @@ Changes from 1.52 to 1.53
 
 Changes from 1.51 to 1.52
 -------------------------
-(26 January 2012)
+(26 January 2013)
 
 * Extended validity of ArmeSFo Root CA (d0c2a341) (AM)
 * Obsoleted UKeScienceCA-2007 and updated Root CRL URL and metadata (UK)
