@@ -55,7 +55,7 @@ remove_discontinued_cas() {
     discontinued="AIST 075047ca JUnet-CA 3154fd00 IUCC 6fee79b0"
     for i in $discontinued ; do
 	for e in crl_url info namespace pem signing_policy ; do
-	    if [ -h /etc/grid-security/certificates/$i.$e ];
+	    if [ -h /etc/grid-security/certificates/$i.$e ]; then
 		rm -f /etc/grid-security/certificates/$i.$e
 	    fi
 	done
