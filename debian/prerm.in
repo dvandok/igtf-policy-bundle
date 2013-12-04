@@ -17,6 +17,12 @@ case "$1" in
 
 	;;
     upgrade|deconfigure)
+	# Remove all the links that were made to the profile files,
+	# but leave the CRLs that were downloaded.
+	for f in /usr/share/igtf-policy/${profile}/* ; do
+	    rm -f /etc/grid-security/certificates/`basename $f`
+    	done
+
     ;;
 
     failed-upgrade)

@@ -38,6 +38,31 @@ ca_included() {
     fi
 }
 
+# When CAs are discontinued, they (ought to) clean up the symlinks.
+# But the CRL files may be left behind. It's always a good idea to remove
+# those CRLs which no longer have their CA certificate present.
+remove_leftover_crls() {
+    for i in /etc/grid-security/certificates/*.r0 ; do
+	if [ ! -e /etc/grid-security/certificates/`basename $i`.0 ] ; then
+	    rm -f $i
+	fi
+    done
+}
+
+# Earlier versions of this package (<=1.54) did not clean up the symlinks
+# of removed CAs
+remove_discontinued_cas() {
+    discontinued="AIST 075047ca JUnet-CA 3154fd00 IUCC 6fee79b0"
+    for i in $discontinued ; do
+	for e in crl_url info namespace pem signing_policy ; do
+	    if [ -h /etc/grid-security/certificates/$i.$e ];
+		rm -f /etc/grid-security/certificates/$i.$e
+	    fi
+	done
+    done
+}
+
+
 case "$1" in
     configure)
 	# The configuration works either by exclusion or
@@ -84,7 +109,10 @@ case "$1" in
 		rm -f /etc/grid-security/certificates/`basename ${f#.*}`.r0
 	    fi
     	done
-
+	remove_leftover_crls
+	if dpkg --compare-versions "$2" lt 1.55 ; then
+	    remove_discontinued_cas
+	fi
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
