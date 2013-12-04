@@ -53,7 +53,7 @@ remove_leftover_crls() {
 # Earlier versions of this package (<=1.54) did not clean up the symlinks
 # of removed CAs
 remove_discontinued_cas() {
-    discontinued="AIST 075047ca JUnet-CA 3154fd00 IUCC 6fee79b0"
+    discontinued="AIST 075047ca a317c467 JUnet-CA 3154fd00 b3222f9e IUCC bfafd1bd 6fee79b0"
     for i in $discontinued ; do
 	for e in crl_url info namespaces pem signing_policy 0; do
 	    if [ -h /etc/grid-security/certificates/$i.$e ]; then
