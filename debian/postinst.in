@@ -43,7 +43,8 @@ ca_included() {
 # those CRLs which no longer have their CA certificate present.
 remove_leftover_crls() {
     for i in /etc/grid-security/certificates/*.r0 ; do
-	if [ ! -e /etc/grid-security/certificates/`basename $i`.0 ] ; then
+	ca=`basename ${i%.*}`
+	if [ ! -e /etc/grid-security/certificates/$ca.0 ] ; then
 	    rm -f $i
 	fi
     done
