@@ -1,3 +1,16 @@
+igtf-policy-bundle (1.56-1) unstable; urgency=low
+
+  * New upstream release:
+
+    -  Removed discontinued SWITCHslcs2011 and associated Root (CH)
+    -  Removed discontinued APAC CA (AU)
+    -  Removed discontinued DoEGrids CA and ESnet root (US)
+    -  Add reference to CA website for AustrianGrid CA (AT)
+    -  Add new subordinates for DigiCert: 1cdf1cd9/DigiCertGridCA-1G2-Classic
+       and 5d9ea26d/DigiCertGridTrustCAG2-Classic (US)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 08 Apr 2014 16:26:53 +0200
+
 igtf-policy-bundle (1.55-1) unstable; urgency=low
 
   * New upstream release:
