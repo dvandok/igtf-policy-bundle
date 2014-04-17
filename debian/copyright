@@ -14,10 +14,6 @@ Files: src/accredited/AddTrust-External-CA-Root.pem
 Copyright: 2000 Addtrust AB
 License: MPL-1.1
 
-Files: src/accredited/DigiCertAssuredIDRootCA-Root.pem
-Copyright: 2006 DigiCert Inc
-License: MPL-1.1
-
 Files: src/accredited/QuoVadis-Root-CA1.pem
 Copyright: 2001 QuoVadis Limited
 License: MPL-1.1
