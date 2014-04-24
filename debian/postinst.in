@@ -42,7 +42,7 @@ ca_included() {
 # But the CRL files may be left behind. It's always a good idea to remove
 # those CRLs which no longer have their CA certificate present.
 remove_leftover_crls() {
-    for i in /etc/grid-security/certificates/*.r0 ; do
+    for i in `find /etc/grid-security/certificates -maxdepth 1 -name '*.r0' -print` ; do
 	ca=`basename ${i%.*}`
 	if [ ! -e /etc/grid-security/certificates/$ca.0 ] ; then
 	    rm -f $i
@@ -91,7 +91,7 @@ case "$1" in
 	# following the inclusion/exclusion principle described
 	# above. The hashed filenames are symlinks to the real
 	# names, so they must be resolved with readlink.
-	for f in /usr/share/igtf-policy/@PROFILE@/* ; do
+	for f in `find /usr/share/igtf-policy/@PROFILE@/ -maxdepth 1 -not -type d`  ; do
             # read the link
 	    if [ -h "$f" ]; then
 		l=`readlink "$f"`
@@ -107,7 +107,7 @@ case "$1" in
 	    else
                 # remove the files, and CRL if any
 		rm -f /etc/grid-security/certificates/`basename $f`
-		rm -f /etc/grid-security/certificates/`basename ${f#.*}`.r0
+		rm -f /etc/grid-security/certificates/`basename ${f%.*}`.r0
 	    fi
     	done
 	remove_leftover_crls

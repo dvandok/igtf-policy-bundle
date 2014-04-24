@@ -1,3 +1,15 @@
+igtf-policy-bundle (1.56-3) unstable; urgency=low
+
+  * Bug fixes in the maintainer scripts.
+    - Wrong shell parameter expansion could cause CRL files to be
+      left behind.
+    - Shell globbing for CRLs with no matches caused postinst to fail.
+      Closes: #745677.
+
+  * Expand README.Debian to explain the use of fetch-crl.
+  
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Thu, 24 Apr 2014 14:31:24 +0200
+
 igtf-policy-bundle (1.56-2) unstable; urgency=low
 
   * Update debian/copyright according to the upstream license.

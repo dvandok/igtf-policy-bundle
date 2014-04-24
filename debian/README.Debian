@@ -9,6 +9,9 @@ than normal files, and therefore they are installed under
 usr/share/ca-certificates/igtf-*/ and /usr/share/igtf-policy instead
 and symlinked to /etc/grid-security/certificates on configuration.
 
+ Profiles
+ ========
+
 Each CA certificate falls in on of three 'profiles' to distinguish
 different policies under which these CAs operate. For more information
 see http://www.eugridpma.org/guidelines/.
@@ -19,6 +22,9 @@ see http://www.eugridpma.org/guidelines/.
 
 The packages are split according to these profiles, so it is very easy
 to install just the classic profile.
+
+ Use as grid trust anchors
+ =========================
 
 By default, all of the certificates in the profile are installed in
 /etc/grid-security/certificates, but it is possible to reconfigure this
@@ -32,6 +38,20 @@ two choices:
   1. Install all certificates save explicit exceptions
   2. Install only selected certificates
 
+ The use of fetch-crl
+ ====================
+
+The use of fetch-crl is highly recommended. This tool will download
+the certificate revocation lists for each CA and store it in PEM
+format alongside the certificate files. However, the default
+configuration on Debian for fetch-crl (currently v3.0.11) is to ignore
+CAs which are only installed as symbolic links. Since the igtf-policy
+packages strictly use symbolic links, this setting needs to be changed
+in /etc/fetch-crl.conf: change 'nosymlinks' to 'symlinks'.
+
+ Unaccredited and experimental CAs
+ =================================
+
 The packages igtf-policy-unaccredited contain only CAs that are not yet
 or no longer accredited. Their use is not recommended, please be very careful
 to review before trusting any CA in this set.
@@ -41,4 +61,4 @@ a limited context, e.g. for testing purposes, but offer no guarantees
 in terms of reliability. Do not install this package unless you know
 what you are doing.
 
- -- Dennis van Dok (Software Engineer) <dennisvd@nikhef.nl>  Wed, 28 Mar 2012 01:42:49 +0200
+ -- Dennis van Dok <dennisvd@nikhef.nl>, Thu, 24 Apr 2014 14:19:00 +0200
