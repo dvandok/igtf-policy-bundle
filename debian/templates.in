@@ -1,23 +1,35 @@
+# These templates have been reviewed by the debian-l10n-english
+# team
+#
+# If modifications/additions/rewording are needed, please ask
+# debian-l10n-english@lists.debian.org for advice.
+#
+# Even minor modifications require translation updates and such
+# changes should be coordinated with translators and reviewers.
+
 Template: igtf-policy-@PROFILE@/install_profile
 Type: boolean
 Default: true
-_Description: Install the IGTF @PROFILE@ CAs in /etc/grid-security/certificates?
- This package installs the IGTF CAs in /etc/grid-security/certificates.
- There are two ways to deal with these certificates:
- - yes: install all, except those in the exclude list
- - no: install only CAs in the include list.
- The include/exclude lists are covered by the next question.
+_Description: Trust IGTF @PROFILE@ CAs by default?
+ Trusted IGTF Certification Authority certificates are installed in
+ /etc/grid-security/certificates.
+ .
+ Accept this option to have certificates included by default unless they
+ are explicitly excluded. Reject it to choose the reverse policy,
+ excluding them unless explicitly included.
+ .
+ You will then have the opportunity to define the list of exceptions.
 
 Template: igtf-policy-@PROFILE@/exclude_ca
 Type: multiselect
 Choices: ${exclude_ca}
-_Description: Certificates to explicitly exclude
- Select which certificates should not be installed in
+_Description: Certificates to explicitly exclude:
+ Please select which certificates should not be installed in
  /etc/grid-security/certificates.
 
 Template: igtf-policy-@PROFILE@/include_ca
 Type: multiselect
 Choices: ${include_ca}
-_Description: Certificates to explicitly include
- Select which certificates should be installed in
+_Description: Certificates to explicitly include:
+ Please select which certificates should be installed in
  /etc/grid-security/certificates.

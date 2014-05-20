@@ -14,13 +14,12 @@ Architecture: all
 Depends: ${misc:Depends}
 Recommends: fetch-crl, openssl
 Suggests: ca-certificates
-Description: IGTF classic profile for Authority Root Certificates
- The International Grid Trust Federation (IGTF) maintains a common
- trust base for the benefit of distributed science and research
- computing infrastructures by maintaining a list of trust anchors, for
- accredited authorities. The distribution contains root certificates,
- certificate revocation list (CRL) locations, contact information, and
- signing policies.
+Description: IGTF classic profile for Certificate Authorities
+ The International Grid Trust Federation (IGTF) maintains a common trust
+ base for the benefit of distributed science and research computing
+ infrastructures. It provides a list of accredited trust anchors, with
+ root certificates, certificate revocation list locations, contact
+ information, and signing policies.
  .
  This package contains the trust anchors for the classic profile.
 
@@ -29,13 +28,12 @@ Architecture: all
 Depends: ${misc:Depends}
 Recommends: fetch-crl, openssl
 Suggests: ca-certificates
-Description: IGTF MICS profile for Authority Root Certificates
- The International Grid Trust Federation (IGTF) maintains a common
- trust base for the benefit of distributed science and research
- computing infrastructures by maintaining a list of trust anchors, for
- accredited authorities. The distribution contains root certificates,
- certificate revocation list (CRL) locations, contact information, and
- signing policies.
+Description: IGTF MICS profile for Certificate Authorities
+ The International Grid Trust Federation (IGTF) maintains a common trust
+ base for the benefit of distributed science and research computing
+ infrastructures. It provides a list of accredited trust anchors, with
+ root certificates, certificate revocation list locations, contact
+ information, and signing policies.
  .
  This package contains the trust anchors for the MICS (Member Integrated
  Credential Services) profile.
@@ -45,13 +43,12 @@ Architecture: all
 Depends: ${misc:Depends}
 Recommends: fetch-crl, openssl
 Suggests: ca-certificates
-Description: IGTF SLCS profile for Authority Root Certificates
- The International Grid Trust Federation (IGTF) maintains a common
- trust base for the benefit of distributed science and research
- computing infrastructures by maintaining a list of trust anchors, for
- accredited authorities. The distribution contains root certificates,
- certificate revocation list (CRL) locations, contact information, and
- signing policies.
+Description: IGTF SLCS profile for Certificate Authorities
+ The International Grid Trust Federation (IGTF) maintains a common trust
+ base for the benefit of distributed science and research computing
+ infrastructures. It provides a list of accredited trust anchors, with
+ root certificates, certificate revocation list locations, contact
+ information, and signing policies.
  .
  This package contains the trust anchors for the SLCS (Short Lived
  Credential Services) profile.
@@ -61,13 +58,12 @@ Architecture: all
 Depends: ${misc:Depends}
 Recommends: openssl
 Suggests: ca-certificates
-Description: IGTF unaccredited Authority Root Certificates
- The International Grid Trust Federation (IGTF) maintains a common
- trust base for the benefit of distributed science and research
- computing infrastructures by maintaining a list of trust anchors, for
- accredited authorities. The distribution contains root certificates,
- certificate revocation list (CRL) locations, contact information, and
- signing policies.
+Description: IGTF unaccredited Certificate Authorities
+ The International Grid Trust Federation (IGTF) maintains a common trust
+ base for the benefit of distributed science and research computing
+ infrastructures. It provides a list of accredited trust anchors, with
+ root certificates, certificate revocation list locations, contact
+ information, and signing policies.
  .
  This package contains several unaccredited trust anchors. Use with
  caution, as they come without any guarantees.
@@ -77,13 +73,12 @@ Architecture: all
 Depends: ${misc:Depends}
 Recommends: openssl
 Suggests: ca-certificates
-Description: IGTF experimental Authority Root Certificates
- The International Grid Trust Federation (IGTF) maintains a common
- trust base for the benefit of distributed science and research
- computing infrastructures by maintaining a list of trust anchors, for
- accredited authorities. The distribution contains root certificates,
- certificate revocation list (CRL) locations, contact information, and
- signing policies.
+Description: IGTF experimental Certificate Authorities
+ The International Grid Trust Federation (IGTF) maintains a common trust
+ base for the benefit of distributed science and research computing
+ infrastructures. It provides a list of accredited trust anchors, with
+ root certificates, certificate revocation list locations, contact
+ information, and signing policies.
  .
  This package contains several experimental trust anchors. Use with
  caution, as they come without any guarantees.

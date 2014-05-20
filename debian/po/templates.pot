@@ -1,14 +1,14 @@
-# Translations of the igt-policy debconf template
-# Copyright (C) 2013 Stichting voor Fundamenteel Onderzoek der Materie
-# This file is distributed under the same license as the igt-policy-bundle package.
-# Dennis van Dok <dennisvd@nikhef.nl>, 2013
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: igtf-policy-bundle\n"
 "Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
-"POT-Creation-Date: 2013-06-20 10:51+0200\n"
+"POT-Creation-Date: 2014-05-14 09:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,44 +19,57 @@ msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../templates.in:1001
-msgid "Install the IGTF @PROFILE@ CAs in /etc/grid-security/certificates?"
+#: ../templates.in:2001
+msgid "Trust IGTF @PROFILE@ CAs by default?"
 msgstr ""
 
 #. Type: boolean
 #. Description
-#: ../templates.in:1001
-msgid ""
-"This package installs the IGTF CAs in /etc/grid-security/certificates. There "
-"are two ways to deal with these certificates: - yes: install all, except "
-"those in the exclude list - no: install only CAs in the include list. The "
-"include/exclude lists are covered by the next question."
-msgstr ""
-
-#. Type: multiselect
-#. Description
 #: ../templates.in:2001
-msgid "Certificates to explicitly exclude"
+msgid ""
+"Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
+"security/certificates."
 msgstr ""
 
-#. Type: multiselect
+#. Type: boolean
 #. Description
 #: ../templates.in:2001
 msgid ""
-"Select which certificates should not be installed in /etc/grid-security/"
-"certificates."
+"Accept this option to have certificates included by default unless they are "
+"explicitly excluded. Reject it to choose the reverse policy, excluding them "
+"unless explicitly included."
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid "You will then have the opportunity to define the list of exceptions."
 msgstr ""
 
 #. Type: multiselect
 #. Description
 #: ../templates.in:3001
-msgid "Certificates to explicitly include"
+msgid "Certificates to explicitly exclude:"
 msgstr ""
 
 #. Type: multiselect
 #. Description
 #: ../templates.in:3001
 msgid ""
-"Select which certificates should be installed in /etc/grid-security/"
+"Please select which certificates should not be installed in /etc/grid-"
+"security/certificates."
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:4001
+msgid "Certificates to explicitly include:"
+msgstr ""
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:4001
+msgid ""
+"Please select which certificates should be installed in /etc/grid-security/"
 "certificates."
 msgstr ""
