@@ -1,0 +1,84 @@
+# Danish translation igtf-policy-bundle.
+# Copyright (C) 2014 igtf-policy-bundle & nedenstående oversætttere.
+# This file is distributed under the same license as the igtf-policy-bundle package.
+# Joe Hansen <joedalton2@yahoo.dk>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: igtf-policy-bundle\n"
+"Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
+"POT-Creation-Date: 2014-05-17 09:42+0200\n"
+"PO-Revision-Date: 2014-05-24 14:44+0200\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <debian-l10n-danish@lists.debian.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid "Trust IGTF @PROFILE@ CAs by default?"
+msgstr "Hav som standard tillid til IGTF @PROFILE@ CA'er?"
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid ""
+"Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
+"security/certificates."
+msgstr ""
+"Trusted IGTF Certification Authority-certifikater installeres i /etc/grid-"
+"security/certificates."
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid ""
+"Accept this option to have certificates included by default unless they are "
+"explicitly excluded. Reject it to choose the reverse policy, excluding them "
+"unless explicitly included."
+msgstr ""
+"Accepter denne indstilling for at certifikaterne bliver inkluderet som "
+"standard, med mindre at de er eksplicit ekskluderet. Afvis for at vælge den "
+"omvendte politik, ekskluder dem med mindre at de er eksplicit inkluderet."
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid "You will then have the opportunity to define the list of exceptions."
+msgstr "Du vil så få mulighed for at definere listen med undtagelser."
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:3001
+msgid "Certificates to explicitly exclude:"
+msgstr "Certifikater der eksplicit skal ekskluderes:"
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:3001
+msgid ""
+"Please select which certificates should not be installed in /etc/grid-"
+"security/certificates."
+msgstr ""
+"Vælg venligst hvilke certifikater der ikke skal installeres i /etc/grid-"
+"security/certificates."
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:4001
+msgid "Certificates to explicitly include:"
+msgstr "Certifikater der eksplicit skal inkluderes:"
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:4001
+msgid ""
+"Please select which certificates should be installed in /etc/grid-security/"
+"certificates."
+msgstr ""
+"Vælg venligst hvilke certifikater der skal installeres i /etc/grid-security/"
+"certificates."
+

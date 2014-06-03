@@ -1,0 +1,69 @@
+# Translation of the  debconf strings to Finnish
+# Copyright (C) 2010
+# This file is distributed under the same license as the  package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: igtf-policy-bundle\n"
+"Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
+"POT-Creation-Date: 2014-05-17 09:42+0200\n"
+"PO-Revision-Date: 2014-06-01 11:23+0200\n"
+"Last-Translator: Esko Arajärvi <edu@iki.fi>\n"
+"Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: Finnish\n"
+"X-Poedit-Country: FINLAND\n"
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid "Trust IGTF @PROFILE@ CAs by default?"
+msgstr "Luotetaanko IGTF @PROFILE@ -juurivarmenteisiin oletuksena?"
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid "Trusted IGTF Certification Authority certificates are installed in /etc/grid-security/certificates."
+msgstr "Hakemistoon /etc/grid-security/certificates asennetaan IGTF-varmentajan luotetut varmenteet."
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid "Accept this option to have certificates included by default unless they are explicitly excluded. Reject it to choose the reverse policy, excluding them unless explicitly included."
+msgstr "Valitse tämä vaihtoehto, jos haluat ottaa nämä varmenteet oletuksena käyttöön. Älä valitse tätä, jos haluat käänteisen politiikan, jossa vain eksplisiittisesti valittuja varmenteita käytetään. "
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid "You will then have the opportunity to define the list of exceptions."
+msgstr "Voit tämän valinnan jälkeen määrittää listan poikkeuksia."
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:3001
+msgid "Certificates to explicitly exclude:"
+msgstr "Varmenteet, joita ei asenneta:"
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:3001
+msgid "Please select which certificates should not be installed in /etc/grid-security/certificates."
+msgstr "Valitse varmenteet, joita ei tulisi asentaa hakemistoon /etc/grid-security/certificates."
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:4001
+msgid "Certificates to explicitly include:"
+msgstr "Asennettavat varmenteet:"
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:4001
+msgid "Please select which certificates should be installed in /etc/grid-security/certificates."
+msgstr "Valitse varmenteet, jotka asennetaan hakemistoon /etc/grid-security/certificates."
+
