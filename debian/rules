@@ -44,11 +44,12 @@ override_dh_auto_install: profile_files
 	done
 
 profile_files:
+	po2debconf debian/templates.in > debian/templates-translated.in
 	cd debian && for profile in classic mics slcs; do \
 	    sed -e "s/@PROFILE@/$$profile/g" < config.in > igtf-policy-$$profile.config ; \
 	    sed -e "s/@PROFILE@/$$profile/g" < postinst.in > igtf-policy-$$profile.postinst ; \
 	    sed -e "s/@PROFILE@/$$profile/g" < prerm.in > igtf-policy-$$profile.prerm ; \
-	    sed -e "s/@PROFILE@/$$profile/g" < templates.in > igtf-policy-$$profile.templates ; \
+	    sed -e "s/@PROFILE@/$$profile/g" < templates-translated.in > igtf-policy-$$profile.templates ; \
 	done
 	cd debian && for profile in classic mics slcs unaccredited experimental; do \
 	    sed -e "s/@PROFILE@/$$profile/g" < install.in > igtf-policy-$$profile.install ; \
