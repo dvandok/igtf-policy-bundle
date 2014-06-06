@@ -28,14 +28,24 @@ msgstr "Luotetaanko IGTF @PROFILE@ -juurivarmenteisiin oletuksena?"
 #. Type: boolean
 #. Description
 #: ../templates.in:2001
-msgid "Trusted IGTF Certification Authority certificates are installed in /etc/grid-security/certificates."
-msgstr "Hakemistoon /etc/grid-security/certificates asennetaan IGTF-varmentajan luotetut varmenteet."
+msgid ""
+"Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
+"security/certificates."
+msgstr ""
+"Hakemistoon /etc/grid-security/certificates asennetaan IGTF-varmentajan "
+"luotetut varmenteet."
 
 #. Type: boolean
 #. Description
 #: ../templates.in:2001
-msgid "Accept this option to have certificates included by default unless they are explicitly excluded. Reject it to choose the reverse policy, excluding them unless explicitly included."
-msgstr "Valitse tämä vaihtoehto, jos haluat ottaa nämä varmenteet oletuksena käyttöön. Älä valitse tätä, jos haluat käänteisen politiikan, jossa vain eksplisiittisesti valittuja varmenteita käytetään. "
+msgid ""
+"Accept this option to have certificates included by default unless they are "
+"explicitly excluded. Reject it to choose the reverse policy, excluding them "
+"unless explicitly included."
+msgstr ""
+"Valitse tämä vaihtoehto, jos haluat ottaa nämä varmenteet oletuksena "
+"käyttöön. Älä valitse tätä, jos haluat käänteisen politiikan, jossa vain "
+"eksplisiittisesti valittuja varmenteita käytetään. "
 
 #. Type: boolean
 #. Description
@@ -52,8 +62,12 @@ msgstr "Varmenteet, joita ei asenneta:"
 #. Type: multiselect
 #. Description
 #: ../templates.in:3001
-msgid "Please select which certificates should not be installed in /etc/grid-security/certificates."
-msgstr "Valitse varmenteet, joita ei tulisi asentaa hakemistoon /etc/grid-security/certificates."
+msgid ""
+"Please select which certificates should not be installed in /etc/grid-"
+"security/certificates."
+msgstr ""
+"Valitse varmenteet, joita ei tulisi asentaa hakemistoon /etc/grid-security/"
+"certificates."
 
 #. Type: multiselect
 #. Description
@@ -64,6 +78,9 @@ msgstr "Asennettavat varmenteet:"
 #. Type: multiselect
 #. Description
 #: ../templates.in:4001
-msgid "Please select which certificates should be installed in /etc/grid-security/certificates."
-msgstr "Valitse varmenteet, jotka asennetaan hakemistoon /etc/grid-security/certificates."
-
+msgid ""
+"Please select which certificates should be installed in /etc/grid-security/"
+"certificates."
+msgstr ""
+"Valitse varmenteet, jotka asennetaan hakemistoon /etc/grid-security/"
+"certificates."

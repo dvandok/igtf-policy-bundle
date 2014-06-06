@@ -1,10 +1,9 @@
 # Dutch translation of igtf-policy-bundle.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) 2014 Members of the IGTF <info@eugridpma.org>
 # This file is distributed under the same license as the 
 # igtf-policy-bundle package.
 # Dennis van Dok <dennisvd@nikhef.nl>, 2014.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: igtf-policy-bundle\n"
@@ -30,8 +29,9 @@ msgstr "De IGTF @PROFILE@ CA's standaard vertrouwen?"
 msgid ""
 "Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
 "security/certificates."
-msgstr "Vertrouwde IGTF certificaat-autoriteiten worden geïnstalleerd in /etc/"
-"grid-security/certificates."
+msgstr ""
+"Certificaten van vertrouwde IGTF certificaat-autoriteiten worden "
+"geïnstalleerd in /etc/grid-security/certificates."
 
 #. Type: boolean
 #. Description

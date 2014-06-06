@@ -63,7 +63,8 @@ msgid ""
 "Please select which certificates should not be installed in /etc/grid-"
 "security/certificates."
 msgstr ""
-"/etc/grid-security/certificates にインストールしない証明書を選択してください。"
+"/etc/grid-security/certificates にインストールしない証明書を選択してくださ"
+"い。"
 
 #. Type: multiselect
 #. Description

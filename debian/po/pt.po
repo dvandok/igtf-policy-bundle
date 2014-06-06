@@ -31,8 +31,8 @@ msgid ""
 "Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
 "security/certificates."
 msgstr ""
-"Os certificados da Trusted IGTF Certification Authority estão instalados "
-"em etc/grid-security/certificates."
+"Os certificados da Trusted IGTF Certification Authority estão instalados em "
+"/etc/grid-security/certificates."
 
 #. Type: boolean
 #. Description
@@ -43,8 +43,8 @@ msgid ""
 "unless explicitly included."
 msgstr ""
 "Aceite esta opção para ter os certificados incluídos por predefinição a "
-"menos que eles sejam excluídos explicitamente. Rejeite-a para escolher "
-"a política reversa, excluindo-os a menos que sejam incluídos explicitamente."
+"menos que eles sejam excluídos explicitamente. Rejeite-a para escolher a "
+"política reversa, excluindo-os a menos que sejam incluídos explicitamente."
 
 #. Type: boolean
 #. Description
@@ -65,8 +65,8 @@ msgid ""
 "Please select which certificates should not be installed in /etc/grid-"
 "security/certificates."
 msgstr ""
-"Por favor seleccione quais certificados não deverão ser instalados em "
-"/etc/grid-security/certificates."
+"Por favor seleccione quais certificados não deverão ser instalados em /etc/"
+"grid-security/certificates."
 
 #. Type: multiselect
 #. Description
@@ -81,6 +81,5 @@ msgid ""
 "Please select which certificates should be installed in /etc/grid-security/"
 "certificates."
 msgstr ""
-"Por favor seleccione quais certificados deverão ser instalados em "
-"/etc/grid-security/certificates."
-
+"Por favor seleccione quais certificados deverão ser instalados em /etc/grid-"
+"security/certificates."

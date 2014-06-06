@@ -30,8 +30,8 @@ msgid ""
 "Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
 "security/certificates."
 msgstr ""
-"I certificati Certification Authority di IGTF fidati vengono installati in "
-"/etc/grid-security/certificates."
+"I certificati Certification Authority di IGTF fidati vengono installati in /"
+"etc/grid-security/certificates."
 
 #. Type: boolean
 #. Description

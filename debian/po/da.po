@@ -81,4 +81,3 @@ msgid ""
 msgstr ""
 "Vælg venligst hvilke certifikater der skal installeres i /etc/grid-security/"
 "certificates."
-

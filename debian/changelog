@@ -1,3 +1,25 @@
+igtf-policy-bundle (1.57-1) unstable; urgency=low
+
+  * New upstream release:
+    - Discontinued obsoleted IHEP (2009) CA ba2f39ca (CN)
+    - Removed discontinued NCSA Two Factor CA following migration
+      to NCSA Two Factor CA 2013 (US)
+
+  * Debconf templates and debian/control reviewed by the debian-l10n-
+    english team as part of the Smith review project. Closes: #745761
+  * [Debconf translation updates]
+  * Russian (Yuri Kozlov).  Closes: #748451
+  * Portuguese (Américo Monteiro).  Closes: #748717
+  * Danish (Joe Hansen).  Closes: #749151
+  * French (Julien Patriarca).  Closes: #749219
+  * Polish (Michał Kułach).  Closes: #750027
+  * Japanese (victory).  Closes: #750055
+  * Finnish (Esko Arajärvi).  Closes: #750061
+  * German (Stefan Schroeder).  Closes: #750126
+  * Italian (Beatrice Torracca).  Closes: #750130
+  
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 03 Jun 2014 17:43:49 +0200
+
 igtf-policy-bundle (1.56-3) unstable; urgency=low
 
   * Bug fixes in the maintainer scripts.

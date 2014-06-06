@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
-"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 1.5\n"
 
 #. Type: boolean
@@ -31,8 +31,8 @@ msgid ""
 "Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
 "security/certificates."
 msgstr ""
-"Доверительные сертификаты центра сертификации IGTF устанавливаются в "
-"/etc/grid-security/certificates."
+"Доверительные сертификаты центра сертификации IGTF устанавливаются в /etc/"
+"grid-security/certificates."
 
 #. Type: boolean
 #. Description
@@ -43,10 +43,8 @@ msgid ""
 "unless explicitly included."
 msgstr ""
 "При утвердительном ответе будут добавлены все сертификаты, включённые по "
-"умолчанию, "
-"кроме исключаемых явно. "
-"При отрицательном ответе действует обратное правило — исключаются все, "
-"кроме добавляемых явно."
+"умолчанию, кроме исключаемых явно. При отрицательном ответе действует "
+"обратное правило — исключаются все, кроме добавляемых явно."
 
 #. Type: boolean
 #. Description
@@ -67,8 +65,8 @@ msgid ""
 "Please select which certificates should not be installed in /etc/grid-"
 "security/certificates."
 msgstr ""
-"Выберите сертификаты, которые не должны быть установлены в "
-"/etc/grid-security/certificates."
+"Выберите сертификаты, которые не должны быть установлены в /etc/grid-"
+"security/certificates."
 
 #. Type: multiselect
 #. Description
@@ -83,6 +81,5 @@ msgid ""
 "Please select which certificates should be installed in /etc/grid-security/"
 "certificates."
 msgstr ""
-"Выберите сертификаты, которые должны быть установлены в "
-"/etc/grid-security/certificates."
-
+"Выберите сертификаты, которые должны быть установлены в /etc/grid-security/"
+"certificates."
