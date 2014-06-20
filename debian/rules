@@ -26,13 +26,14 @@ override_dh_auto_configure:
 	--with-profile=classic \
 	--with-profile=slcs \
 	--with-profile=mics \
+	--with-profile=iota \
 	--with-profile=unaccredited \
 	--with-profile=experimental \
 	--with-install="install -m 644"
 
 
 override_dh_auto_install: profile_files
-	for profile in classic slcs mics unaccredited experimental; do \
+	for profile in classic slcs mics iota unaccredited experimental; do \
 	    mkdir -p debian/tmp/$(BASE)/$$profile ; \
 	    mkdir -p debian/tmp/usr/share/ca-certificates/igtf-$$profile ; \
 	    make install-$$profile prefix=`pwd`/debian/tmp/$(BASE)/$$profile ; \
@@ -45,13 +46,13 @@ override_dh_auto_install: profile_files
 
 profile_files:
 	po2debconf debian/templates.in > debian/templates-translated.in
-	cd debian && for profile in classic mics slcs; do \
+	cd debian && for profile in classic mics slcs iota; do \
 	    sed -e "s/@PROFILE@/$$profile/g" < config.in > igtf-policy-$$profile.config ; \
 	    sed -e "s/@PROFILE@/$$profile/g" < postinst.in > igtf-policy-$$profile.postinst ; \
 	    sed -e "s/@PROFILE@/$$profile/g" < prerm.in > igtf-policy-$$profile.prerm ; \
 	    sed -e "s/@PROFILE@/$$profile/g" < templates-translated.in > igtf-policy-$$profile.templates ; \
 	done
-	cd debian && for profile in classic mics slcs unaccredited experimental; do \
+	cd debian && for profile in classic mics slcs iota unaccredited experimental; do \
 	    sed -e "s/@PROFILE@/$$profile/g" < install.in > igtf-policy-$$profile.install ; \
 	    cp docs.in igtf-policy-$$profile.docs ; \
 	done

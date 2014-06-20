@@ -22,6 +22,7 @@ Description: IGTF classic profile for Certificate Authorities
  information, and signing policies.
  .
  This package contains the trust anchors for the classic profile.
+ See also: http://www.eugridpma.org/guidelines/classic
 
 Package: igtf-policy-mics
 Architecture: all
@@ -36,7 +37,8 @@ Description: IGTF MICS profile for Certificate Authorities
  information, and signing policies.
  .
  This package contains the trust anchors for the MICS (Member Integrated
- Credential Services) profile.
+ Credential Services) profile. See also:
+ http://www.eugridpma.org/guidelines/MICS/
 
 Package: igtf-policy-slcs
 Architecture: all
@@ -51,7 +53,24 @@ Description: IGTF SLCS profile for Certificate Authorities
  information, and signing policies.
  .
  This package contains the trust anchors for the SLCS (Short Lived
- Credential Services) profile.
+ Credential Services) profile. See also:
+ http://www.eugridpma.org/guidelines/SLCS/
+
+Package: igtf-policy-iota
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: fetch-crl, openssl
+Suggests: ca-certificates
+Description: IGTF SLCS profile for Certificate Authorities
+ The International Grid Trust Federation (IGTF) maintains a common trust
+ base for the benefit of distributed science and research computing
+ infrastructures. It provides a list of accredited trust anchors, with
+ root certificates, certificate revocation list locations, contact
+ information, and signing policies.
+ .
+ This package contains the trust anchors for the IOTA (Identifier-Only
+ Trust Assurance with Secured Infrastructure) profile. See also:
+ http://www.eugridpma.org/guidelines/IOTA/
 
 Package: igtf-policy-unaccredited
 Architecture: all

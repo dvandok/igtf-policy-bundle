@@ -1,3 +1,18 @@
+igtf-policy-bundle (1.58-1) UNRELEASED; urgency=low
+
+  * New upstream release:
+    - Added accredited classic InCommon Server IGTF SSL CA and intermediate
+      Comodo RSA CA (SHA-2) (US)
+    - Updated CILogon Basic CA from experimental to accredited:iota (US)
+    - Updated certifcate URL for IHEP-CA-2013 39d30eba (CN)
+    - Discontinued expiring SEE-GRID '2004' CA - since replaced by
+      new SEEGRID-CA-2013 (GR)
+
+  * [Debconf translation updates]
+  * Czech (Michal Simunek). Closes: #751434
+
+ --
+
 igtf-policy-bundle (1.57-1) unstable; urgency=low
 
   * New upstream release:

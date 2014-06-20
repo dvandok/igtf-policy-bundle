@@ -5,6 +5,17 @@ refer to the README.txt file for additional information on installing the
 Distribution and to be informed about important information on distribuion 
 lay-out.
 
+Changes from 1.57 to 1.58
+-------------------------
+(30 June 2014)
+
+* Added accredited classic InCommon Server IGTF SSL CA and intermediate 
+  Comodo RSA CA (SHA-2) (US)
+* Updated CILogon Basic CA from experimental to accredited:iota (US)
+* Updated certifcate URL for IHEP-CA-2013 39d30eba (CN)
+* Discontinued expiring SEE-GRID '2004' CA - since replaced by 
+  new SEEGRID-CA-2013 (GR)
+
 Changes from 1.56 to 1.57
 -------------------------
 (2 June 2014)
