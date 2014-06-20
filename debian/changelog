@@ -11,7 +11,7 @@ igtf-policy-bundle (1.58-1) UNRELEASED; urgency=low
   * [Debconf translation updates]
   * Czech (Michal Simunek). Closes: #751434
 
- --
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 20 Jun 2014 14:32:01 +0200
 
 igtf-policy-bundle (1.57-1) unstable; urgency=low
 
