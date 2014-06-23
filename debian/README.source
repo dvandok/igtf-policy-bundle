@@ -4,19 +4,12 @@ igtf-policy for Debian
 The sources for this package are obtained from 
 https://dist.eugridpma.info/distribution/igtf/current/.
 
-The CHANGES file, which is not bundled with the tarball,
-is obtained separately from 
-https://dist.eugridpma.info/distribution/igtf/current/CHANGES
-and merged with debian/CHANGES
-
 Updating the igtf bundle takes the following simple steps:
 
    1. go to the igtf-bundle directory
    2. run uscan --destdir=../build-area
    3. update debian/changelog
-   4. update the CHANGES file from the website
-      https://dist.eugridpma.info/distribution/igtf/current/CHANGES
-   5. check into git
-   6. run git-buildpackage --git-overlay --git-export-dir=../build-area
+   4. check into git
+   5. run git-buildpackage --git-overlay --git-export-dir=../build-area
 
- -- Dennis van Dok <dennisvd@nikhef.nl>, Wed,  4 Dec 2013 09:21:44 +0100
+ -- Dennis van Dok <dennisvd@nikhef.nl>, Mon, 23 Jun 2014 15:54:00 +0200

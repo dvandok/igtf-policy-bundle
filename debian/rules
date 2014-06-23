@@ -61,4 +61,4 @@ profile_files:
 override_dh_installinfo:
 
 override_dh_installchangelogs:
-	dh_installchangelogs debian/CHANGES
+	dh_installchangelogs CHANGES
