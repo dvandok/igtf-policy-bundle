@@ -1,4 +1,4 @@
-igtf-policy-bundle (1.58-1) UNRELEASED; urgency=low
+igtf-policy-bundle (1.58-1) unstable; urgency=low
 
   * New upstream release:
     - Added accredited classic InCommon Server IGTF SSL CA and intermediate
@@ -13,7 +13,7 @@ igtf-policy-bundle (1.58-1) UNRELEASED; urgency=low
   * [Debconf translation updates]
   * Czech (Michal Simunek). Closes: #751434
 
- -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 20 Jun 2014 14:32:01 +0200
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 24 Jun 2014 09:48:26 +0200
 
 igtf-policy-bundle (1.57-1) unstable; urgency=low
 
