@@ -51,6 +51,7 @@ profile_files:
 	    sed -e "s/@PROFILE@/$$profile/g" < postinst.in > igtf-policy-$$profile.postinst ; \
 	    sed -e "s/@PROFILE@/$$profile/g" < prerm.in > igtf-policy-$$profile.prerm ; \
 	    sed -e "s/@PROFILE@/$$profile/g" < templates-translated.in > igtf-policy-$$profile.templates ; \
+	    cp dirs.in igtf-policy-$$profile.dirs ; \
 	done
 	cd debian && for profile in classic mics slcs iota unaccredited experimental; do \
 	    sed -e "s/@PROFILE@/$$profile/g" < install.in > igtf-policy-$$profile.install ; \
