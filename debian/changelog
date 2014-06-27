@@ -1,3 +1,9 @@
+igtf-policy-bundle (1.58-2) unstable; urgency=low
+
+  * take care of removal of /etc/grid-security/certificates
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 27 Jun 2014 10:59:20 +0200
+
 igtf-policy-bundle (1.58-1) unstable; urgency=low
 
   * New upstream release:
