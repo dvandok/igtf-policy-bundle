@@ -26,7 +26,7 @@ override_dh_installdirs:
 	cd debian && for profile in $(PROFILES); do \
 	    cp dirs.in igtf-policy-$$profile.dirs ; \
 	done
-	dh_installdirs $@
+	dh_installdirs
 
 override_dh_auto_configure:
 	./configure --prefix=`pwd`/debian/tmp/$(BASE) \
