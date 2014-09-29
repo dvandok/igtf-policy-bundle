@@ -1,8 +1,15 @@
-igtf-policy-bundle (1.58-2) unstable; urgency=low
+igtf-policy-bundle (1.59-1) unstable; urgency=low
+
+  * New upstream release:
+    - Added accredited mics HPCI CA (JP)
+    - Updated crl_url for NCSA-slcs-2013 and NCSA-tfca-2013 (US)
+    - Renamed QuoVadis classic grid issuing CA to QuoVadis-Grid-ICA (CH, BM)
 
   * take care of removal of /etc/grid-security/certificates
+  * [Debconf translation updates]
+  * Spanish (Matías Bellone). Closes: #752956
 
- -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 27 Jun 2014 10:59:20 +0200
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 29 Sep 2014 15:36:07 +0200
 
 igtf-policy-bundle (1.58-1) unstable; urgency=low
 
