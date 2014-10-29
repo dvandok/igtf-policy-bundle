@@ -1,9 +1,12 @@
-igtf-policy-bundle (1.59-2) unstable; urgency=low
+igtf-policy-bundle (1.60-1) unstable; urgency=low
 
+  * New upstream release:
+    - Added new SHA-2 hierarchies for TERENA Certificate Service (ed. 2009) (EU)
+  
   * Suggest fetch-crl rather than recommend it. Closes: #763404
   * Use a HTTPS Git URL as the Vcs-Git tag for github.com
 
- --
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 29 Oct 2014 15:58:42 +0100
 
 igtf-policy-bundle (1.59-1) unstable; urgency=low
 
