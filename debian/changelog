@@ -1,3 +1,10 @@
+igtf-policy-bundle (1.61-1~preview) UNRELEASED; urgency=low
+
+  * [Debconf translation updates]
+  * Swedish (Martin Bagge)
+
+ --
+
 igtf-policy-bundle (1.60-1) unstable; urgency=low
 
   * New upstream release:
