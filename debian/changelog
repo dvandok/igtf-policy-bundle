@@ -1,9 +1,13 @@
 igtf-policy-bundle (1.61-1~preview) UNRELEASED; urgency=low
 
+    * New upstream release:
+      - Added new IPv6-capable crl_url entries for NCSA and CILogon CAs (US)
+      - Added accredited TSU (Georgia) CA (GE)
+      - Extended life time and updated digest function of AustrianGrid CA (AT)
   * [Debconf translation updates]
   * Swedish (Martin Bagge)
 
- --
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 25 Nov 2014 16:12:10 +0100
 
 igtf-policy-bundle (1.60-1) unstable; urgency=low
 
