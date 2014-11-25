@@ -1,4 +1,4 @@
-igtf-policy-bundle (1.61-1~preview) UNRELEASED; urgency=low
+igtf-policy-bundle (1.61-1) unstable; urgency=low
 
     * New upstream release:
       - Added new IPv6-capable crl_url entries for NCSA and CILogon CAs (US)
