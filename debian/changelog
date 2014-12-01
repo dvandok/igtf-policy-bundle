@@ -5,7 +5,7 @@ igtf-policy-bundle (1.61-1) unstable; urgency=low
       - Added accredited TSU (Georgia) CA (GE)
       - Extended life time and updated digest function of AustrianGrid CA (AT)
   * [Debconf translation updates]
-  * Swedish (Martin Bagge)
+  * Swedish (Martin Bagge). Closes: #769872
 
  -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 25 Nov 2014 16:12:10 +0100
 
