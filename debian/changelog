@@ -1,3 +1,16 @@
+igtf-policy-bundle (1.62-1) unstable; urgency=low
+
+  * New upstream release:
+    - Added Root CA 2 for NIIF (HU)
+    - Extended validity period for pkIRISgrid CA (ES)
+    - Updated DigiCert root CA meta-data in preparation for TCS (US)
+    - Included GEANT TCS CA G3 trust anchors (EU)
+    - Temporarily suspended HIAST/74c6eaeb for operational reasons (SY)
+    - Discontinued ULAGrid-CA-2008 CA (VE)
+    - Discontinued NCHC CA (TW)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 23 Feb 2015 09:27:47 +0100
+
 igtf-policy-bundle (1.61-1) unstable; urgency=low
 
     * New upstream release:
