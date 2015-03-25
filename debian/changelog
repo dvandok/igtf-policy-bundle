@@ -1,3 +1,19 @@
+igtf-policy-bundle (1.63-1) unstable; urgency=low
+
+  * New upstream release:
+    - Removed obsoleted and replaced NIIF CA (HU)
+    - Extended validity period of the KEK CA (JP)
+    - Removed obsoleted d254cc30/CERN-Root 1d879c6c/CERN-TCA anchors (CERN)
+    - Updated RPDNC namespaces to permit DigiCert Grid Trust G2 ICAs for
+      DigiCert Assured ID Root CA (US)
+    - Updated RPDNC namespaces and signing_policy files for G2 series
+      DigiCert Grid CAs pending ICA reissuance for reverse RDN issue (US)
+    - Nomalised cond_subject syntax for multiple signing policy files
+      cilogon-basic cilogon-silver InCommon-IGTF-Server-CA NCSA-slcs-2013
+      NCSA-tfca-2013 Comodo-RSA-CA
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 25 Mar 2015 10:33:03 +0100
+
 igtf-policy-bundle (1.62-1) unstable; urgency=low
 
   * New upstream release:
@@ -13,10 +29,10 @@ igtf-policy-bundle (1.62-1) unstable; urgency=low
 
 igtf-policy-bundle (1.61-1) unstable; urgency=low
 
-    * New upstream release:
-      - Added new IPv6-capable crl_url entries for NCSA and CILogon CAs (US)
-      - Added accredited TSU (Georgia) CA (GE)
-      - Extended life time and updated digest function of AustrianGrid CA (AT)
+  * New upstream release:
+    - Added new IPv6-capable crl_url entries for NCSA and CILogon CAs (US)
+    - Added accredited TSU (Georgia) CA (GE)
+    - Extended life time and updated digest function of AustrianGrid CA (AT)
   * [Debconf translation updates]
   * Swedish (Martin Bagge). Closes: #769872
 
