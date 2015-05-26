@@ -1,3 +1,15 @@
+igtf-policy-bundle (1.64-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Extended validity period of the BalticGrid CA (EE,LT,LV)
+    - Removed obsolete NICS-MyProxy CA (US)
+    - Added revised DigiCertGridCA-1G2-Classic-2015 Classic CA (US)
+    - Updated CRL URL information for TCS G3 by preferring secondary URI (EU)
+    - Updated RDIG CA with extended validity self-signed root (RU)
+    - Removed obsolete NCSA-slcs CA, replaced by NCSA-slcs-2013 (US)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 26 May 2015 09:28:34 +0200
+
 igtf-policy-bundle (1.63-1) unstable; urgency=low
 
   * New upstream release:
