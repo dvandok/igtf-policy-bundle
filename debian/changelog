@@ -1,3 +1,15 @@
+igtf-policy-bundle (1.65-1) unstable; urgency=low
+
+  * New upstream release:
+    - Discontinued NAREGI CA (JP)
+    - Added addition G2 root for IPM CA (IR)
+    - Added new subjectdn attribute to the trust anchor and profile
+      meta-data files to aid monitoring and authentication-profile based
+      access control mechanism use cases. See
+      http://wiki.eugridpma.org/Main/IGTFInfoFile (ALL)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 22 Jun 2015 12:50:56 +0200
+
 igtf-policy-bundle (1.64-1) unstable; urgency=medium
 
   * New upstream release:
