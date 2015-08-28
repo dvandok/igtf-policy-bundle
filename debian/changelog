@@ -1,3 +1,10 @@
+igtf-policy-bundle (1.66-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Discontinued NCSA-mics CA (US)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 28 Aug 2015 11:02:12 +0200
+
 igtf-policy-bundle (1.65-1) unstable; urgency=low
 
   * New upstream release:
