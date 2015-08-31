@@ -1,9 +1,11 @@
-igtf-policy-bundle (1.66-1) unstable; urgency=medium
+igtf-policy-bundle (1.67-1) unstable; urgency=high
 
   * New upstream release:
+    (31 August 2015 - release jump, skipping 1.66)
     - Discontinued NCSA-mics CA (US)
+    - Withdrawn G2 root for IPM CA (IR)
 
- -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 28 Aug 2015 11:02:12 +0200
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 31 Aug 2015 13:56:48 +0200
 
 igtf-policy-bundle (1.65-1) unstable; urgency=low
 
