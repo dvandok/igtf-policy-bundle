@@ -1,3 +1,9 @@
+igtf-policy-bundle (1.67-1~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports. Closes: #788589
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 04 Sep 2015 14:03:48 +0200
+
 igtf-policy-bundle (1.67-1) unstable; urgency=high
 
   * New upstream release:
