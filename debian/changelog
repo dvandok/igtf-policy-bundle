@@ -1,3 +1,11 @@
+igtf-policy-bundle (1.68-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Discontinued CALG CA (LV)
+    - Added experimental KENET CAs (KE)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 06 Oct 2015 09:50:00 +0200
+
 igtf-policy-bundle (1.67-1) unstable; urgency=high
 
   * New upstream release:
