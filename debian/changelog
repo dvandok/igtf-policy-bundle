@@ -1,3 +1,12 @@
+igtf-policy-bundle (1.70-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Updated CRL URL hosted by KIT for ArmeSFO (AM)
+    - Added NorduGrid 2015 trust anchor (DK,NO,SE,FI,IS)
+    - Discontinued superseded DigiCertGridCA-1G2-Classic (US)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 25 Nov 2015 17:30:24 +0100
+
 igtf-policy-bundle (1.69-1) unstable; urgency=medium
 
   * New upstream release:
