@@ -1,8 +1,17 @@
-igtf-policy-bundle (1.69-1~bpo8+1) jessie-backports; urgency=medium
+igtf-policy-bundle (1.70-1~bpo8+1) jessie-backports; urgency=medium
 
   * Rebuild for jessie-backports
 
- -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 03 Nov 2015 14:22:53 +0100
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 09 Dec 2015 08:58:42 +0100
+
+igtf-policy-bundle (1.70-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Updated CRL URL hosted by KIT for ArmeSFO (AM)
+    - Added NorduGrid 2015 trust anchor (DK,NO,SE,FI,IS)
+    - Discontinued superseded DigiCertGridCA-1G2-Classic (US)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 25 Nov 2015 17:30:24 +0100
 
 igtf-policy-bundle (1.69-1) unstable; urgency=medium
 
