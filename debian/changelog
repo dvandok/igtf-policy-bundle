@@ -1,3 +1,14 @@
+igtf-policy-bundle (1.71-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Added accredited classic KENET ICA and associated Root (KE)
+    - Added roll-over subordinate for the SDG CA G2 (CN)
+    - Removed expiring SDG CA (CN)
+    - Updated CyGrid Root CA with extended validity period (CY)
+    - Updated BG-ACAD-CA with extended validity period (BG)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 25 Jan 2016 11:53:11 +0100
+
 igtf-policy-bundle (1.70-1) unstable; urgency=medium
 
   * New upstream release:
