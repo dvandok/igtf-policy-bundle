@@ -1,3 +1,12 @@
+igtf-policy-bundle (1.72-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Added roll-over subordinate for the SDG CA G2 (CN)
+    - Added CERN LCG IOTA CA (CERN)
+    - Updated PSC MyProxy CA with extended validity (US)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 01 Mar 2016 13:47:09 +0100
+
 igtf-policy-bundle (1.71-1) unstable; urgency=medium
 
   * New upstream release:
