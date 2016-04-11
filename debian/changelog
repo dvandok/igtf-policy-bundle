@@ -1,3 +1,18 @@
+igtf-policy-bundle (1.73-1~bpo8+1) unstable; urgency=medium
+
+  * Rebuild for jessie-backports
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 11 Apr 2016 19:29:40 +0200
+
+igtf-policy-bundle (1.73-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Updated key pair for SDG CA G2 (CN)
+    - Revised URL to point to http endpoint for CERN IOTA ICA CRL (CERN)
+    - Added experimental DCA Root G1 and RCauth.eu Pilot ICA G1 (NL, EU)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 29 Mar 2016 12:57:13 +0200
+
 igtf-policy-bundle (1.72-1~bpo8+1) jessie-backports; urgency=medium
 
   * Rebuild for jessie-backports
