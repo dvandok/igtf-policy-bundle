@@ -1,4 +1,4 @@
-igtf-policy-bundle (1.73-1~bpo8+1) unstable; urgency=medium
+igtf-policy-bundle (1.73-1~bpo8+1) jessie-backports; urgency=medium
 
   * Rebuild for jessie-backports
 
