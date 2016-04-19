@@ -15,7 +15,7 @@ Depends: ${misc:Depends}
 Recommends: openssl
 Suggests: ca-certificates, fetch-crl
 Description: IGTF classic profile for Certificate Authorities
- The International Grid Trust Federation (IGTF) maintains a common trust
+ The Interoperable Global Trust Federation (IGTF) maintains a common trust
  base for the benefit of distributed science and research computing
  infrastructures. It provides a list of accredited trust anchors, with
  root certificates, certificate revocation list locations, contact
@@ -30,7 +30,7 @@ Depends: ${misc:Depends}
 Recommends: openssl
 Suggests: ca-certificates, fetch-crl
 Description: IGTF MICS profile for Certificate Authorities
- The International Grid Trust Federation (IGTF) maintains a common trust
+ The Interoperable Global Trust Federation (IGTF) maintains a common trust
  base for the benefit of distributed science and research computing
  infrastructures. It provides a list of accredited trust anchors, with
  root certificates, certificate revocation list locations, contact
@@ -46,7 +46,7 @@ Depends: ${misc:Depends}
 Recommends: openssl
 Suggests: ca-certificates, fetch-crl
 Description: IGTF SLCS profile for Certificate Authorities
- The International Grid Trust Federation (IGTF) maintains a common trust
+ The Interoperable Global Trust Federation (IGTF) maintains a common trust
  base for the benefit of distributed science and research computing
  infrastructures. It provides a list of accredited trust anchors, with
  root certificates, certificate revocation list locations, contact
@@ -62,7 +62,7 @@ Depends: ${misc:Depends}
 Recommends: openssl
 Suggests: ca-certificates, fetch-crl
 Description: IGTF IOTA profile for Certificate Authorities
- The International Grid Trust Federation (IGTF) maintains a common trust
+ The Interoperable Global Trust Federation (IGTF) maintains a common trust
  base for the benefit of distributed science and research computing
  infrastructures. It provides a list of accredited trust anchors, with
  root certificates, certificate revocation list locations, contact
@@ -78,7 +78,7 @@ Depends: ${misc:Depends}
 Recommends: openssl
 Suggests: ca-certificates
 Description: IGTF unaccredited Certificate Authorities
- The International Grid Trust Federation (IGTF) maintains a common trust
+ The Interoperable Global Trust Federation (IGTF) maintains a common trust
  base for the benefit of distributed science and research computing
  infrastructures. It provides a list of accredited trust anchors, with
  root certificates, certificate revocation list locations, contact
@@ -93,7 +93,7 @@ Depends: ${misc:Depends}
 Recommends: openssl
 Suggests: ca-certificates
 Description: IGTF experimental Certificate Authorities
- The International Grid Trust Federation (IGTF) maintains a common trust
+ The Interoperable Global Trust Federation (IGTF) maintains a common trust
  base for the benefit of distributed science and research computing
  infrastructures. It provides a list of accredited trust anchors, with
  root certificates, certificate revocation list locations, contact
