@@ -1,3 +1,11 @@
+igtf-policy-bundle (1.74-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Removed superseded NorduGrid (2006) CA (DK)
+    - Added HellasGrid 2016 CA (GR)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 17 May 2016 11:12:10 +0200
+
 igtf-policy-bundle (1.73-1) unstable; urgency=medium
 
   * New upstream release:
