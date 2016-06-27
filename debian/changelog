@@ -1,3 +1,11 @@
+igtf-policy-bundle (1.75-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Discontinued expired UFF BrGrid CA (BR)
+    - Discontinued expired HellasGrid-2006 and associated Root (GR)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 27 Jun 2016 10:46:12 +0200
+
 igtf-policy-bundle (1.74-1) unstable; urgency=medium
 
   * New upstream release:
