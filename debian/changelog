@@ -1,3 +1,11 @@
+igtf-policy-bundle (1.76-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Added accredited RCauth.eu IOTA CA and associated root (EU)
+    - Added DutchGrid Root G1 (NL)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 10 Aug 2016 11:15:20 +0200
+
 igtf-policy-bundle (1.75-1) unstable; urgency=medium
 
   * New upstream release:
