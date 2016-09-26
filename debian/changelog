@@ -1,3 +1,13 @@
+igtf-policy-bundle (1.77-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Updated namespaces and signing_policy files for CILogon Basic CA to
+      permit DNs without "/C=US" (US)
+    - Added G2 series (sha-2) QuoVadis Root 2 and Grid ICA G2 (BM)
+    - Removed discontinued UniandesCA (CO)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 26 Sep 2016 12:00:12 +0200
+
 igtf-policy-bundle (1.76-1) unstable; urgency=medium
 
   * New upstream release:
