@@ -1,3 +1,24 @@
+igtf-policy-bundle (1.79-1~bpo8+1) jessie-backports; urgency=medium
+
+  * Rebuild for jessie-backports
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Thu, 08 Dec 2016 12:23:15 +0100
+
+igtf-policy-bundle (1.79-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Updated UNLPGrid CA with extended validity period (AR)
+    - Fix regular expressions in CILogon and NCSA CA namespaces files (US)
+    - Included rollover CA IRAN-GRID-CGC-G2 (IR)
+    - Corrected an incorrect line in selected info files for DigiCert (US)
+    - Discontinued expiring NECTEC CA (TH)
+    - [1.78 update]
+    - Removed superseded INFN-CA-2006 CA (IT)
+  * [Debconf translation updates]
+  * Brazilian Portugese (Adriano Rafael Gomes).  Closes: #844674
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 21 Nov 2016 10:57:56 +0100
+
 igtf-policy-bundle (1.77-1~bpo8+1) jessie-backports; urgency=medium
 
   * Rebuild for jessie-backports
