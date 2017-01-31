@@ -1,3 +1,10 @@
+igtf-policy-bundle (1.80-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Discontinued BEGrid2008 (BELNET) classic authority (BE)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 31 Jan 2017 09:56:25 +0100
+
 igtf-policy-bundle (1.79-1) unstable; urgency=medium
 
   * New upstream release:
