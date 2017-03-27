@@ -1,3 +1,13 @@
+igtf-policy-bundle (1.82-1) unstable; urgency=medium
+
+ * New upstream release:
+   - Added new G2 UGrid trust anchor (UA)
+   - Extended validity for AEGIS CA (RS)
+   - Withdrawn discontinued FNAL KCA (US)
+   - Extended valitity for REUNA CA (CL)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 27 Mar 2017 12:38:38 +0200
+
 igtf-policy-bundle (1.81-1) unstable; urgency=medium
 
   * New upstream release:
