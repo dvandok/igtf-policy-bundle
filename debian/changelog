@@ -1,3 +1,14 @@
+igtf-policy-bundle (1.83-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Added new trust anchor for accredited KISTI CA v3 (KR)
+    - Removed obsolete GEANT TCS G1 and G2 (old Comodo-backed) trust anchors:
+      UTN-USERFirst-Hardware TERENA-eScience-SSL-CA AAACertificateServices
+      UTNAAAClient TERENAeSciencePersonalCA UTN-USERTrust-RSA-CA
+      TERENA-eScience-SSL-CA-2 TERENAeSciencePersonalCA2 (EU)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 29 May 2017 12:38:19 +0200
+
 igtf-policy-bundle (1.82-1) unstable; urgency=medium
 
   * New upstream release:
