@@ -1,3 +1,14 @@
+igtf-policy-bundle (1.84-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Updated ROSA root certificate with extended 20yr valitity (RO)
+    - Updated contact details for CyGrid CA following transition to CYNET (CY)
+    - Removed obsoleted KISTI-2007 trust anchor - replaced by KISTIv3 (KR)
+    - Removed expiring LACGrid trust anchor a9082267 (BR)
+    - Added UK Pathfinder AAAI CA 1 to unaccredited (misc) area (UK)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 26 Jun 2017 12:38:55 +0200
+
 igtf-policy-bundle (1.83-1) unstable; urgency=medium
 
   * New upstream release:
