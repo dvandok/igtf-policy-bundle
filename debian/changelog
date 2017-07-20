@@ -1,3 +1,58 @@
+igtf-policy-bundle (1.84-1~bpo8+1) jessie-backports-sloppy; urgency=medium
+
+  * Rebuild for jessie-backports-sloppy
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Thu, 20 Jul 2017 12:31:52 +0200
+
+igtf-policy-bundle (1.84-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Updated ROSA root certificate with extended 20yr valitity (RO)
+    - Updated contact details for CyGrid CA following transition to CYNET (CY)
+    - Removed obsoleted KISTI-2007 trust anchor - replaced by KISTIv3 (KR)
+    - Removed expiring LACGrid trust anchor a9082267 (BR)
+    - Added UK Pathfinder AAAI CA 1 to unaccredited (misc) area (UK)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 26 Jun 2017 12:38:55 +0200
+
+igtf-policy-bundle (1.83-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Added new trust anchor for accredited KISTI CA v3 (KR)
+    - Removed obsolete GEANT TCS G1 and G2 (old Comodo-backed) trust anchors:
+      UTN-USERFirst-Hardware TERENA-eScience-SSL-CA AAACertificateServices
+      UTNAAAClient TERENAeSciencePersonalCA UTN-USERTrust-RSA-CA
+      TERENA-eScience-SSL-CA-2 TERENAeSciencePersonalCA2 (EU)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 29 May 2017 12:38:19 +0200
+
+igtf-policy-bundle (1.82-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Added new G2 UGrid trust anchor (UA)
+    - Extended validity for AEGIS CA (RS)
+    - Withdrawn discontinued FNAL KCA (US)
+    - Extended valitity for REUNA CA (CL)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 27 Mar 2017 12:38:38 +0200
+
+igtf-policy-bundle (1.81-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Added accredited DarkMatter classic QV-intermediate ICAs (AE)
+      including QuoVadis Root CA 2 G3 and Root CA 3 G3 higher level CAs (BM)
+    - Updated contact information for EUN EG-GRID CA (EG)
+    - Withdrawn classic UKeScienceCA-2A in advance of repurposing (UK)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 27 Feb 2017 12:23:46 +0100
+
+igtf-policy-bundle (1.80-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Discontinued BEGrid2008 (BELNET) classic authority (BE)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 31 Jan 2017 09:56:25 +0100
+
 igtf-policy-bundle (1.79-1~bpo8+1) jessie-backports; urgency=medium
 
   * Rebuild for jessie-backports
