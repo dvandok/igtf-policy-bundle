@@ -1,3 +1,9 @@
+igtf-policy-bundle (1.84-1~bpo9+1) stretch-backports; urgency=medium
+
+  * Rebuild for stretch-backports
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Thu, 20 Jul 2017 12:19:21 +0200
+
 igtf-policy-bundle (1.84-1) unstable; urgency=medium
 
   * New upstream release:
