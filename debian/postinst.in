@@ -24,13 +24,13 @@ in_list() {
 # check if $1 is supposed to be included.
 ca_included() {
     if [ "$install_profile" = true ]; then
-	if in_list "$1" "$excluded" ; then
+	if in_list "$1" $excluded ; then
 	    return 1
 	else
 	    return 0
 	fi
     else
-	if in_list "$1" "$included" ; then
+	if in_list "$1" $included ; then
 	    return 0
 	else
 	    return 1
@@ -42,9 +42,9 @@ ca_included() {
 # But the CRL files may be left behind. It's always a good idea to remove
 # those CRLs which no longer have their CA certificate present.
 remove_leftover_crls() {
-    for i in `find /etc/grid-security/certificates -maxdepth 1 -name '*.r0' -print` ; do
+    for i in `find ${location} -maxdepth 1 -name '*.r0' -print` ; do
 	ca=`basename ${i%.*}`
-	if [ ! -e /etc/grid-security/certificates/$ca.0 ] ; then
+	if [ ! -e ${location}/$ca.0 ] ; then
 	    rm -f $i
 	fi
     done
@@ -66,15 +66,40 @@ remove_discontinued_cas() {
 
 case "$1" in
     configure)
+	# find the location where to install the certificates
+	db_get igtf-policy/location
+	location="$RET"
+	if [ ! -d "$location" ]; then
+	    if ! mkdir -p "$location" ; then
+		echo "could not create directory $location" >&2
+		exit 1
+	    else
+		# leave a marker to flag that this directory should
+		# be removed along with the package.
+		touch "$location"/.created_by_igtf_policy
+	    fi
+	fi
+
+	db_get igtf-policy/old-location
+	oldloc="$RET"
+	# Move the whole kit and kaboodle to the new spot;
+	# including any other igtf profile.
+	if [ -d "$oldloc" -a "$oldloc" != "$location" ]; then
+	    mv "$oldloc"/* "$location"/ > /dev/null 2>&1 || true
+	    if [ -f "$oldloc"/.created_by_igtf_policy ]; then
+		rm  "$oldloc"/.created_by_igtf_policy
+		filesleft=`ls -a "$oldloc" | wc -l`
+		if [ $filesleft -eq 2 ]; then
+		    rmdir "$oldloc"
+		fi
+	    fi
+	fi
+
 	# The configuration works either by exclusion or
 	# inclusion of exceptions. If install_profile is
 	# 'yes', then all are installed except those listed
 	# in exclude_ca; if 'no' then only those in
 	# include_ca are installed.
-
-	if [ ! -e /etc/grid-security/certificates ]; then
-	    mkdir -p /etc/grid-security/certificates
-	fi
 
 	# get the setting of whether to install the profile
 	db_get igtf-policy-@PROFILE@/install_profile
@@ -87,7 +112,7 @@ case "$1" in
 	db_get igtf-policy-@PROFILE@/include_ca
 	included=`echo "$RET" | tr ',' ' '`
 
-	# symlink each file to /etc/grid-security/certificates
+	# symlink each file to ${location}
 	# following the inclusion/exclusion principle described
 	# above. The hashed filenames are symlinks to the real
 	# names, so they must be resolved with readlink.
@@ -101,19 +126,19 @@ case "$1" in
 	    ca=`basename ${l%.*}`
 	    if ca_included $ca; then
                 # create symlink if it doesn't exist
-		if [ ! -e /etc/grid-security/certificates/`basename $f` ]; then
+		if [ ! -e ${location}/`basename $f` ]; then
 		    # copy symbolic links (that point to the same directory)
 		    # rather than create another link
 		    if [ -h "$f" ] && ! readlink "$f" | grep -q '/' ; then
-			cp -d "$f" /etc/grid-security/certificates/
+			cp -d "$f" ${location}/
 		    else
-			ln -s "$f" /etc/grid-security/certificates/
+			ln -s "$f" ${location}/
 		    fi
 		fi
 	    else
                 # remove the files, and CRL if any
-		rm -f /etc/grid-security/certificates/`basename $f`
-		rm -f /etc/grid-security/certificates/`basename ${f%.*}`.r0
+		rm -f ${location}/`basename $f`
+		rm -f ${location}/`basename ${f%.*}`.r0
 	    fi
     	done
 	remove_leftover_crls

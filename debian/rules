@@ -22,15 +22,6 @@ PROFILES = classic mics slcs iota
 %:
 	dh $@ 
 
-# Include /etc/grid-security/certificates in each of
-# the profile packages, so dpkg will remove them cleanly
-# when the packages are uninstalled.
-override_dh_installdirs:
-	cd debian && for profile in $(PROFILES); do \
-	    cp dirs.in igtf-policy-$$profile.dirs ; \
-	done
-	dh_installdirs
-
 override_dh_auto_configure:
 	./configure --prefix=`pwd`/debian/tmp/$(BASE) \
 	--with-profile=classic \
