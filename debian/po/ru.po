@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: igtf-policy-bundle 1.56-3\n"
 "Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
-"POT-Creation-Date: 2014-05-17 09:42+0200\n"
+"POT-Creation-Date: 2017-07-24 17:44+0200\n"
 "PO-Revision-Date: 2014-05-17 15:32+0400\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
@@ -28,11 +28,11 @@ msgstr "Доверять по умолчанию центру сертифика
 #. Description
 #: ../templates.in:2001
 msgid ""
-"Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
-"security/certificates."
+"Trusted IGTF Certification Authority certificates are installed in "
+"${location}."
 msgstr ""
-"Доверительные сертификаты центра сертификации IGTF устанавливаются в /etc/"
-"grid-security/certificates."
+"Доверительные сертификаты центра сертификации IGTF устанавливаются в "
+"${location}."
 
 #. Type: boolean
 #. Description
@@ -62,11 +62,9 @@ msgstr "Явно исключаемые сертификаты:"
 #. Description
 #: ../templates.in:3001
 msgid ""
-"Please select which certificates should not be installed in /etc/grid-"
-"security/certificates."
+"Please select which certificates should not be installed in ${location}."
 msgstr ""
-"Выберите сертификаты, которые не должны быть установлены в /etc/grid-"
-"security/certificates."
+"Выберите сертификаты, которые не должны быть установлены в ${location}."
 
 #. Type: multiselect
 #. Description
@@ -77,9 +75,25 @@ msgstr "Явно включаемые сертификаты:"
 #. Type: multiselect
 #. Description
 #: ../templates.in:4001
-msgid ""
-"Please select which certificates should be installed in /etc/grid-security/"
-"certificates."
+msgid "Please select which certificates should be installed in ${location}."
+msgstr "Выберите сертификаты, которые должны быть установлены в ${location}."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "Installation directory of the certificates:"
 msgstr ""
-"Выберите сертификаты, которые должны быть установлены в /etc/grid-security/"
-"certificates."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid ""
+"The default location /etc/grid-security/certificates should work fine in "
+"most cases."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "An alternative location can be given here if needed."
+msgstr ""

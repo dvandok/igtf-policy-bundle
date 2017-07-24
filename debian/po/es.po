@@ -29,7 +29,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: igtf-policy-bundle\n"
 "Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
-"POT-Creation-Date: 2013-11-08 07:01+0100\n"
+"POT-Creation-Date: 2017-07-24 17:44+0200\n"
 "PO-Revision-Date: 2014-06-13 20:55-0300\n"
 "Last-Translator: Matías Bellone <matiasbellone+debian@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
@@ -48,11 +48,11 @@ msgstr "¿Desea confiar en las CA de IGTF @PROFILE@ de forma predeterminada?"
 #. Description
 #: ../templates.in:2001
 msgid ""
-"Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
-"security/certificates."
+"Trusted IGTF Certification Authority certificates are installed in "
+"${location}."
 msgstr ""
 "Los certificados confiables de la Autoridad de Certificación IGTF se "
-"instalarán en «/etc/grid-security/certificates»."
+"instalarán en «${location}»."
 
 #. Type: boolean
 #. Description
@@ -62,8 +62,8 @@ msgid ""
 "explicitly excluded. Reject it to choose the reverse policy, excluding them "
 "unless explicitly included."
 msgstr ""
-"Acepte esta opción para incluir certificados de forma predeterminada a "
-"menos que sean excluidos explícitamente. Rechácela para la política inversa: "
+"Acepte esta opción para incluir certificados de forma predeterminada a menos "
+"que sean excluidos explícitamente. Rechácela para la política inversa: "
 "excluirlos a menos que sean incluidos explícitamente."
 
 #. Type: boolean
@@ -82,11 +82,9 @@ msgstr "Certificados a excluir explícitamente:"
 #. Description
 #: ../templates.in:3001
 msgid ""
-"Please select which certificates should not be installed in /etc/grid-"
-"security/certificates."
+"Please select which certificates should not be installed in ${location}."
 msgstr ""
-"Seleccione los certificados que no deberían instalarse en «/etc/grid-"
-"security/certificates»."
+"Seleccione los certificados que no deberían instalarse en «${location}»."
 
 #. Type: multiselect
 #. Description
@@ -97,9 +95,25 @@ msgstr "Certificados a incluir explícitamente:"
 #. Type: multiselect
 #. Description
 #: ../templates.in:4001
-msgid ""
-"Please select which certificates should be installed in /etc/grid-security/"
-"certificates."
+msgid "Please select which certificates should be installed in ${location}."
+msgstr "Seleccione los certificados que deberían instalarse en «${location}»."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "Installation directory of the certificates:"
 msgstr ""
-"Seleccione los certificados que deberían instalarse en «/etc/grid-security/"
-"certificates»."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid ""
+"The default location /etc/grid-security/certificates should work fine in "
+"most cases."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "An alternative location can be given here if needed."
+msgstr ""

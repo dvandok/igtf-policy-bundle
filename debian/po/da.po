@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: igtf-policy-bundle\n"
 "Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
-"POT-Creation-Date: 2014-05-17 09:42+0200\n"
+"POT-Creation-Date: 2017-07-24 17:44+0200\n"
 "PO-Revision-Date: 2014-05-24 14:44+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <debian-l10n-danish@lists.debian.org>\n"
@@ -26,11 +26,10 @@ msgstr "Hav som standard tillid til IGTF @PROFILE@ CA'er?"
 #. Description
 #: ../templates.in:2001
 msgid ""
-"Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
-"security/certificates."
+"Trusted IGTF Certification Authority certificates are installed in "
+"${location}."
 msgstr ""
-"Trusted IGTF Certification Authority-certifikater installeres i /etc/grid-"
-"security/certificates."
+"Trusted IGTF Certification Authority-certifikater installeres i ${location}."
 
 #. Type: boolean
 #. Description
@@ -60,11 +59,9 @@ msgstr "Certifikater der eksplicit skal ekskluderes:"
 #. Description
 #: ../templates.in:3001
 msgid ""
-"Please select which certificates should not be installed in /etc/grid-"
-"security/certificates."
+"Please select which certificates should not be installed in ${location}."
 msgstr ""
-"Vælg venligst hvilke certifikater der ikke skal installeres i /etc/grid-"
-"security/certificates."
+"Vælg venligst hvilke certifikater der ikke skal installeres i ${location}."
 
 #. Type: multiselect
 #. Description
@@ -75,9 +72,25 @@ msgstr "Certifikater der eksplicit skal inkluderes:"
 #. Type: multiselect
 #. Description
 #: ../templates.in:4001
-msgid ""
-"Please select which certificates should be installed in /etc/grid-security/"
-"certificates."
+msgid "Please select which certificates should be installed in ${location}."
+msgstr "Vælg venligst hvilke certifikater der skal installeres i ${location}."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "Installation directory of the certificates:"
 msgstr ""
-"Vælg venligst hvilke certifikater der skal installeres i /etc/grid-security/"
-"certificates."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid ""
+"The default location /etc/grid-security/certificates should work fine in "
+"most cases."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "An alternative location can be given here if needed."
+msgstr ""
