@@ -1,3 +1,12 @@
+igtf-policy-bundle (1.85-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Updated URL domain information for CyGrid (CY)
+
+  * Create relative symbolic links for hash files. Closes: #868776
+  
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 24 Jul 2017 13:59:13 +0200
+
 igtf-policy-bundle (1.84-1) unstable; urgency=medium
 
   * New upstream release:
