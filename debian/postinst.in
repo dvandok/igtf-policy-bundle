@@ -102,7 +102,13 @@ case "$1" in
 	    if ca_included $ca; then
                 # create symlink if it doesn't exist
 		if [ ! -e /etc/grid-security/certificates/`basename $f` ]; then
-		    ln -s "$f" /etc/grid-security/certificates/ 
+		    # copy symbolic links (that point to the same directory)
+		    # rather than create another link
+		    if [ -h "$f" ] && ! readlink "$f" | grep -q '/' ; then
+			cp -d "$f" /etc/grid-security/certificates/
+		    else
+			ln -s "$f" /etc/grid-security/certificates/
+		    fi
 		fi
 	    else
                 # remove the files, and CRL if any
