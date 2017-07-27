@@ -1,22 +1,22 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the igtf-policy-bundle package.
 #
-# Yuri Kozlov <yuray@komyakino.ru>, 2014.
+# Yuri Kozlov <yuray@komyakino.ru>, 2014, 2017.
 msgid ""
 msgstr ""
-"Project-Id-Version: igtf-policy-bundle 1.56-3\n"
+"Project-Id-Version: igtf-policy-bundle 1.85-1\n"
 "Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
 "POT-Creation-Date: 2017-07-24 17:44+0200\n"
-"PO-Revision-Date: 2014-05-17 15:32+0400\n"
+"PO-Revision-Date: 2017-07-26 18:53+0300\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 2.0\n"
 
 #. Type: boolean
 #. Description
@@ -82,7 +82,7 @@ msgstr "Выберите сертификаты, которые должны б�
 #. Description
 #: ../templates.in:5001
 msgid "Installation directory of the certificates:"
-msgstr ""
+msgstr "Каталог установки сертификатов:"
 
 #. Type: string
 #. Description
@@ -91,9 +91,12 @@ msgid ""
 "The default location /etc/grid-security/certificates should work fine in "
 "most cases."
 msgstr ""
+"Для большинства случаев подходит расположение по умолчанию —"
+" /etc/grid-security/certificates."
 
 #. Type: string
 #. Description
 #: ../templates.in:5001
 msgid "An alternative location can be given here if needed."
-msgstr ""
+msgstr "Здесь, если нужно, можно указать другое расположение."
+
