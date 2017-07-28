@@ -5,6 +5,11 @@ igtf-policy-bundle (1.85-1) unstable; urgency=medium
 
   * Create relative symbolic links for hash files. Closes: #868776
   * Make the installation location configurable. Closes: #820259
+  * [Debconf translation updates]
+  * Spanish (Isaac Quiroz)
+  * Portuguese (Américo Monteiro). Closes: #869689
+  * Russian (Yuri Kozlov). Closes: #869811
+  * Swedish (Martin Bagge). Closes: #869962
   
  -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 24 Jul 2017 13:59:13 +0200
 
