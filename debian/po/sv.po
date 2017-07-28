@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: igtf-policy-bundle\n"
 "Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
 "POT-Creation-Date: 2017-07-24 17:44+0200\n"
-"PO-Revision-Date: 2014-11-17 09:48+0100\n"
+"PO-Revision-Date: 2017-07-28 08:52+0200\n"
 "Last-Translator: Martin Bagge / brother <brother@bsnet.se>\n"
 "Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
 "Language: sv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #. Type: boolean
 #. Description
@@ -80,7 +80,7 @@ msgstr "Ange vilka certifikat som ska installeras i ${location}."
 #. Description
 #: ../templates.in:5001
 msgid "Installation directory of the certificates:"
-msgstr ""
+msgstr "Installationskatalog för certifikaten:"
 
 #. Type: string
 #. Description
@@ -89,9 +89,11 @@ msgid ""
 "The default location /etc/grid-security/certificates should work fine in "
 "most cases."
 msgstr ""
+"Standardsökvägen /etc/grid-security/certificates bör fungera i de flesta "
+"fall."
 
 #. Type: string
 #. Description
 #: ../templates.in:5001
 msgid "An alternative location can be given here if needed."
-msgstr ""
+msgstr "En alternativ plats kan anges om det behövs."
