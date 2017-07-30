@@ -10,6 +10,7 @@ igtf-policy-bundle (1.85-1) unstable; urgency=medium
   * Portuguese (Américo Monteiro). Closes: #869689
   * Russian (Yuri Kozlov). Closes: #869811
   * Swedish (Martin Bagge). Closes: #869962
+  * Indonesian (Dio Oktarianos Putra). Closes: #870136
   
  -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 24 Jul 2017 13:59:13 +0200
 

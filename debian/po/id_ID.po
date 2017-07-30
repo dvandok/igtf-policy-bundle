@@ -1,0 +1,98 @@
+# INDONESIAN TRANSLATION.
+# Copyright (C) 2017 COPYRIGHT HOLDER
+# This file is distributed under the same license as the igtf-policy-bundle package.
+# Dio Oktarianos Putra <diooktput97@outlook.com>, 2017.
+# Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: igtf-policy-bundle\n"
+"Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
+"POT-Creation-Date: 2017-07-24 17:44+0200\n"
+"PO-Revision-Date: 2017-07-31 11:55+0200\n"
+"Last-Translator: Dio Oktarianos Putra <diooktput97@outlook.com>\n"
+"Language-Team: debian-l10n-indonesian@lists.debian.org\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid "Trust IGTF @PROFILE@ CAs by default?"
+msgstr "Yakin Otoritas Sertifikat IGTF @PROFILE@ sebagai pengaturan baku?"
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid ""
+"Trusted IGTF Certification Authority certificates are installed in "
+"${location}."
+msgstr "Sertifikat terpercaya dari Otoritas Sertifikat IGTF telah terpasang di dalam"
+"${location}."
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid ""
+"Accept this option to have certificates included by default unless they are "
+"explicitly excluded. Reject it to choose the reverse policy, excluding them "
+"unless explicitly included."
+msgstr ""
+"Setuju dengan opsi ini untuk memiliki sertifikat yang terpasang kecuali "
+"dicabut secara eksplisit. Tidak setuju dengan penarikan kebijakan, terkecuali "
+"bukti yang kuat telah di nyatakan"
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid "You will then have the opportunity to define the list of exceptions."
+msgstr "Anda kemudian akan memiliki kesempatan untuk menentukan daftar pengecualian"
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:3001
+msgid "Certificates to explicitly exclude:"
+msgstr "Sertifikat untuk dikecualikan secara eksplisit:"
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:3001
+msgid ""
+"Please select which certificates should not be installed in ${location}."
+msgstr ""
+"Mohon pilih sertifikat yang tidak boleh di pasang pada ${location}."
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:4001
+msgid "Certificates to explicitly include:"
+msgstr "Sertifikat untuk disertakan secara eksplisit:"
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:4001
+msgid "Please select which certificates should be installed in ${location}."
+msgstr "Mohon pilih sertifikat yang harus di pasang pada ${location}."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "Installation directory of the certificates:"
+msgstr "Direktori pemasangan dari sertifikat:"
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid ""
+"The default location /etc/grid-security/certificates should work fine in "
+"most cases."
+msgstr ""
+"Lokasi baku /etc/grid-security/certificates harus bekerja dalam "
+"segala kondisi."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "An alternative location can be given here if needed."
+msgstr "Lokasi alternatif dapat diajukan jika dibutuhkan."
