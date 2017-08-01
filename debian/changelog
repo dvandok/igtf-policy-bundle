@@ -11,8 +11,9 @@ igtf-policy-bundle (1.85-1) unstable; urgency=medium
   * Russian (Yuri Kozlov). Closes: #869811
   * Swedish (Martin Bagge). Closes: #869962
   * Indonesian (Dio Oktarianos Putra). Closes: #870136
+  * French (Julien Patriarca). Closes: #870303
   
- -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 24 Jul 2017 13:59:13 +0200
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 01 Aug 2017 14:39:31 +0200
 
 igtf-policy-bundle (1.84-1) unstable; urgency=medium
 
