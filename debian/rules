@@ -32,6 +32,11 @@ override_dh_auto_configure:
 	--with-profile=experimental \
 	--with-install="install -m 644"
 
+override_dh_installdirs:
+	cd debian && for profile in $(PROFILES); do \
+	    cp dirs.in igtf-policy-$$profile.dirs ; \
+	done
+	dh_installdirs
 
 override_dh_auto_install: profile_files
 	for profile in $(PROFILES) unaccredited experimental; do \
