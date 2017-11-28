@@ -1,13 +1,13 @@
 # Italian translation of igtf-policy-bundle debconf messages
-# Copyright (C) 2014, igtf-policy-bundle copyright holder
+# Copyright (C) 2017, igtf-policy-bundle copyright holder
 # This file is distributed under the same license as the igtf-policy-bundle package.
-# Beatrice Torracca <beatricet@libero.it>, 2014.
+# Beatrice Torracca <beatricet@libero.it>, 2014, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: igtf-policy-bundle\n"
 "Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
 "POT-Creation-Date: 2017-07-24 17:44+0200\n"
-"PO-Revision-Date: 2014-05-17 13:14+0200\n"
+"PO-Revision-Date: 2017-07-27 20:59+0200\n"
 "Last-Translator: Beatrice Torracca <beatricet@libero.it>\n"
 "Language-Team: Italian <debian-l10n-italian@lists.debian.org>\n"
 "Language: it\n"
@@ -84,7 +84,7 @@ msgstr ""
 #. Description
 #: ../templates.in:5001
 msgid "Installation directory of the certificates:"
-msgstr ""
+msgstr "Directory di installazione dei certificati:"
 
 #. Type: string
 #. Description
@@ -93,9 +93,11 @@ msgid ""
 "The default location /etc/grid-security/certificates should work fine in "
 "most cases."
 msgstr ""
+"La posizione predefinita /etc/grid-security/certificates dovrebbe andare "
+"bene nella maggior parte dei casi."
 
 #. Type: string
 #. Description
 #: ../templates.in:5001
 msgid "An alternative location can be given here if needed."
-msgstr ""
+msgstr "Qui può essere specificata, se necessario, una posizione alternativa."
