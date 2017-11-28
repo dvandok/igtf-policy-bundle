@@ -4,15 +4,11 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-
 # The IGTF installation bundle installs all profiles in one go,
-# but we'll split them up in separate packages. Most of the metadata
-# goes to /usr/share/igtf-policy/<profile>, but the certs themselves
-# are put in /usr/share/ca-certificates/igtf-<profile> because the
-# ca-certificates package only uses real files. The config, postinst,
-# templates and prerm for the accredited profiles are so alike that
+# but we'll split them up in separate packages. All of the metadata
+# goes to /usr/share/igtf-policy/<profile>. The config, postinst,
+# templates, and prerm for the accredited profiles are so alike that
 # they are generated in-line.
-
 
 # the root of the installation tree.
 BASE = /usr/share/igtf-policy
@@ -43,11 +39,6 @@ override_dh_auto_install: profile_files
 	    mkdir -p debian/tmp/$(BASE)/$$profile ; \
 	    mkdir -p debian/tmp/usr/share/ca-certificates/igtf-$$profile ; \
 	    make install-$$profile prefix=`pwd`/debian/tmp/$(BASE)/$$profile ; \
-	    for i in debian/tmp/usr/share/igtf-policy/$$profile/*.pem ; do \
-	        j=/usr/share/ca-certificates/igtf-$$profile/`basename $${i%.pem}`.crt ; \
-	        mv $$i debian/tmp/$$j ; \
-	        ln -s  $$j $$i ; \
-	    done ; \
 	done
 
 profile_files:
