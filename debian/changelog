@@ -1,3 +1,25 @@
+igtf-policy-bundle (1.88-1) unstable; urgency=medium
+
+  * New upstream releases:
+    - [.88 update]
+    - updated UKeScience 2B ICA based on a SHA-2 family digest (UK)
+    - added new PKIUNAMgrid (2017) trust anchor for roll-over (MX)
+    - [1.87 update]
+    - added new accredited classic DarkMatter Private Root G4 and ICA (AE)
+    - updated PK-Grid-2007 trust anchor with extended validity period (PK)
+    - extended validity period for UNAMgrid-ca trust anchor (MX)
+    - [1.86 update]
+    - updated MaGrid CA with extended validity period (MA)
+    - removed discontinued pkIRISGrid CA (ES)
+  * Undo the integration with ca-certificates. Closes: #880419
+  * Reclaim ownership of /etc/grid-security/certificates. Closes: #875406
+  * [Debconf translation updates]
+  * German (Stefan Schroeder). Closes: #870397
+  * Czech (Michal Simunek). Closes: #871035
+  * Italian (Beatrice Torracca). Closes: #872750
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 28 Nov 2017 14:21:46 +0100
+
 igtf-policy-bundle (1.85-1) unstable; urgency=medium
 
   * New upstream release:
