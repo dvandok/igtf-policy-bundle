@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Maintainer: Dennis van Dok <dennisvd@nikhef.nl>
 Build-Depends: debhelper (>= 8.0.0), po-debconf
-Standards-Version: 4.0.0
+Standards-Version: 4.1.1
 Homepage: http://www.igtf.net/
 Vcs-Git: https://github.com/dvandok/igtf-policy-bundle.git
 Vcs-Browser: https://github.com/dvandok/igtf-policy-bundle
