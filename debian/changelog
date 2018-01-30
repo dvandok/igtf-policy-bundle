@@ -1,3 +1,10 @@
+igtf-policy-bundle (1.89-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Discontinued expiring UGRID (2008) root CA (UA)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 30 Jan 2018 12:23:37 +0100
+
 igtf-policy-bundle (1.88-1) unstable; urgency=medium
 
   * New upstream releases:
