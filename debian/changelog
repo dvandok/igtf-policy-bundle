@@ -1,3 +1,14 @@
+igtf-policy-bundle (1.90-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Added new Grid-FR hierarchy for Renater (AC-GRID-FR series) (FR)
+    - Added new GARUDAINDIA2 root for key roll-over IGCA (IN)
+    - Updated contact metadata for UNAM trust anchors (MX)
+  * [Debconf translation updates]
+  * Brazilian Portuguese (Adriano Rafael Gomes). Closes: #891164
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 04 Apr 2018 12:08:22 +0200
+
 igtf-policy-bundle (1.89-1) unstable; urgency=medium
 
   * New upstream release:
