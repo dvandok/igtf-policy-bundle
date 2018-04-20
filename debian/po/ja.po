@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: igtf-policy-bundle\n"
 "Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
-"POT-Creation-Date: 2014-05-17 09:42+0200\n"
+"POT-Creation-Date: 2017-07-24 17:44+0200\n"
 "PO-Revision-Date: 2014-05-17 16:42+0900\n"
 "Last-Translator: victory <victory.deb@gmail.com>\n"
 "Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
@@ -26,11 +26,9 @@ msgstr "IGTF @PROFILE@ CA をデフォルトで信頼しますか?"
 #. Description
 #: ../templates.in:2001
 msgid ""
-"Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
-"security/certificates."
-msgstr ""
-"信頼した IGTF CA証明書は /etc/grid-security/certificates にインストールされま"
-"す。"
+"Trusted IGTF Certification Authority certificates are installed in "
+"${location}."
+msgstr "信頼した IGTF CA証明書は ${location} にインストールされます。"
 
 #. Type: boolean
 #. Description
@@ -60,11 +58,8 @@ msgstr "明示的に除外する証明書"
 #. Description
 #: ../templates.in:3001
 msgid ""
-"Please select which certificates should not be installed in /etc/grid-"
-"security/certificates."
-msgstr ""
-"/etc/grid-security/certificates にインストールしない証明書を選択してくださ"
-"い。"
+"Please select which certificates should not be installed in ${location}."
+msgstr "${location} にインストールしない証明書を選択してください。"
 
 #. Type: multiselect
 #. Description
@@ -75,8 +70,25 @@ msgstr "明示的にインストールする証明書"
 #. Type: multiselect
 #. Description
 #: ../templates.in:4001
-msgid ""
-"Please select which certificates should be installed in /etc/grid-security/"
-"certificates."
+msgid "Please select which certificates should be installed in ${location}."
+msgstr "${location} にインストールする証明書を選択してください。"
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "Installation directory of the certificates:"
 msgstr ""
-"/etc/grid-security/certificates にインストールする証明書を選択してください。"
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid ""
+"The default location /etc/grid-security/certificates should work fine in "
+"most cases."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "An alternative location can be given here if needed."
+msgstr ""

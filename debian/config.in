@@ -7,6 +7,26 @@ set -e
 
 db_capb backup
 
+# record the original value in case we need to clean up
+# the old location
+
+if db_get igtf-policy/location ; then
+    oldloc="$RET"
+    db_set igtf-policy/old-location "$oldloc" || true
+fi
+
+db_input low igtf-policy/location || true
+
+db_go
+
+db_get igtf-policy/location || true
+location="$RET"
+
+# substitute the configuration location
+db_subst igtf-policy-@PROFILE@/install_profile location "$location" || true
+db_subst igtf-policy-@PROFILE@/exclude_ca location "$location" || true
+db_subst igtf-policy-@PROFILE@/include_ca location "$location" || true
+
 db_input medium igtf-policy-@PROFILE@/install_profile || true
 
 db_go

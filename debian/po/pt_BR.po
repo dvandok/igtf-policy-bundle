@@ -1,14 +1,14 @@
 # Debconf translations for igtf-policy-bundle.
 # Copyright (C) 2016 THE igtf-policy-bundle'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the igtf-policy-bundle package.
-# Adriano Rafael Gomes <adrianorg@debian.org>, 2016.
+# Adriano Rafael Gomes <adrianorg@debian.org>, 2016-2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: igtf-policy-bundle\n"
 "Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
-"POT-Creation-Date: 2014-05-17 09:42+0200\n"
-"PO-Revision-Date: 2016-11-17 20:44-0200\n"
+"POT-Creation-Date: 2017-07-24 17:44+0200\n"
+"PO-Revision-Date: 2018-04-04 12:10+0200\n"
 "Last-Translator: Adriano Rafael Gomes <adrianorg@debian.org>\n"
 "Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
 "org>\n"
@@ -27,11 +27,11 @@ msgstr "Confiar em CAs @PROFILE@ IGTF por padrão?"
 #. Description
 #: ../templates.in:2001
 msgid ""
-"Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
-"security/certificates."
+"Trusted IGTF Certification Authority certificates are installed in "
+"${location}."
 msgstr ""
-"Certificados da Autoridade Certificadora IGTF confiáveis são instalados em /"
-"etc/grid-security/certificates."
+"Certificados da Autoridade Certificadora IGTF confiáveis são instalados em "
+"${location}."
 
 #. Type: boolean
 #. Description
@@ -61,11 +61,10 @@ msgstr "Certificados para explicitamente excluir:"
 #. Description
 #: ../templates.in:3001
 msgid ""
-"Please select which certificates should not be installed in /etc/grid-"
-"security/certificates."
+"Please select which certificates should not be installed in ${location}."
 msgstr ""
-"Por favor, selecione quais certificados não deverão ser instalados em /etc/"
-"grid-security/certificates."
+"Por favor, selecione quais certificados não deverão ser instalados em "
+"${location}."
 
 #. Type: multiselect
 #. Description
@@ -76,9 +75,29 @@ msgstr "Certificados para explicitamente incluir:"
 #. Type: multiselect
 #. Description
 #: ../templates.in:4001
-msgid ""
-"Please select which certificates should be installed in /etc/grid-security/"
-"certificates."
+msgid "Please select which certificates should be installed in ${location}."
 msgstr ""
-"Por favor, selecione quais certificados deverão ser instalados em /etc/grid-"
-"security/certificates."
+"Por favor, selecione quais certificados deverão ser instalados em "
+"${location}."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "Installation directory of the certificates:"
+msgstr "Diretório de instalação dos certificados:"
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid ""
+"The default location /etc/grid-security/certificates should work fine in "
+"most cases."
+msgstr ""
+"O local padrão /etc/grid-security/certificates deve funcionar bem na maioria "
+"dos casos."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "An alternative location can be given here if needed."
+msgstr "Um local alternativo pode ser informado aqui caso necessário."

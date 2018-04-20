@@ -12,7 +12,7 @@ Type: boolean
 Default: true
 _Description: Trust IGTF @PROFILE@ CAs by default?
  Trusted IGTF Certification Authority certificates are installed in
- /etc/grid-security/certificates.
+ ${location}.
  .
  Accept this option to have certificates included by default unless they
  are explicitly excluded. Reject it to choose the reverse policy,
@@ -25,11 +25,27 @@ Type: multiselect
 Choices: ${exclude_ca}
 _Description: Certificates to explicitly exclude:
  Please select which certificates should not be installed in
- /etc/grid-security/certificates.
+ ${location}.
 
 Template: igtf-policy-@PROFILE@/include_ca
 Type: multiselect
 Choices: ${include_ca}
 _Description: Certificates to explicitly include:
  Please select which certificates should be installed in
- /etc/grid-security/certificates.
+ ${location}.
+
+Template: igtf-policy/location
+Default: /etc/grid-security/certificates
+Type: string
+_Description: Installation directory of the certificates:
+ The default location /etc/grid-security/certificates should
+ work fine in most cases.
+ .
+ An alternative location can be given here if needed.
+
+Template: igtf-policy/old-location
+Type: string
+Description: for internal use
+ This setting is for internal use by the configure script
+ and users should never see this question. It exists to ensure
+ proper cleanup if the location changes.

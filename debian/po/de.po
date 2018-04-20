@@ -2,14 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the
 # igtf-policy-bundle package.
-# Stefan Schroeder <ondekoza@gmail.com>, 2014
+# Stefan Schroeder <ondekoza@gmail.com>, 2014, 2017
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: igtf-policy-bundle\n"
 "Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
-"POT-Creation-Date: 2014-05-17 09:42+0200\n"
-"PO-Revision-Date: 2014-05-17 10:23+0600\n"
+"POT-Creation-Date: 2017-07-24 17:44+0200\n"
+"PO-Revision-Date: 2017-08-02 11:08+0200\n"
 "Last-Translator: Stefan Schroeder <ondekoza@gmail.com>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
 "Language: de\n"
@@ -27,11 +27,11 @@ msgstr "Als Voreinstellung den IGTF-@PROFILE@-CAs vertrauen?"
 #. Description
 #: ../templates.in:2001
 msgid ""
-"Trusted IGTF Certification Authority certificates are installed in /etc/grid-"
-"security/certificates."
+"Trusted IGTF Certification Authority certificates are installed in "
+"${location}."
 msgstr ""
-"Die vertrauenswürdigen IGTF-Certification-Authority-Zertifikate werden in /"
-"etc/grid-security/certificates installiert."
+"Die vertrauenswürdigen IGTF-Certification-Authority-Zertifikate werden in "
+"${location} installiert."
 
 #. Type: boolean
 #. Description
@@ -50,7 +50,7 @@ msgstr ""
 #. Description
 #: ../templates.in:2001
 msgid "You will then have the opportunity to define the list of exceptions."
-msgstr "Sie werden die Gelegenheit haben, Ausnahmen zu definieren."
+msgstr "Sie werden dann die Gelegenheit haben, Ausnahmen zu definieren."
 
 #. Type: multiselect
 #. Description
@@ -62,11 +62,10 @@ msgstr "Zertifikate, die ausdrücklich ausgeschlossen werden sollen:"
 #. Description
 #: ../templates.in:3001
 msgid ""
-"Please select which certificates should not be installed in /etc/grid-"
-"security/certificates."
+"Please select which certificates should not be installed in ${location}."
 msgstr ""
-"Bitte wählen Sie die Zertifikate, die nicht in /etc/grid-security/"
-"certificates installiert werden sollen, aus."
+"Bitte wählen Sie die Zertifikate aus, die nicht in ${location} installiert "
+"werden sollen."
 
 #. Type: multiselect
 #. Description
@@ -77,9 +76,26 @@ msgstr "Zertifikate, die ausdrücklich berücksichtigt werden sollen:"
 #. Type: multiselect
 #. Description
 #: ../templates.in:4001
+msgid "Please select which certificates should be installed in ${location}."
+msgstr "Bitte wählen Sie die Zertifikate aus, die in ${location} installiert werden sollen."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "Installation directory of the certificates:"
+msgstr "Installationsverzeichnis der Zertifikate:"
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
 msgid ""
-"Please select which certificates should be installed in /etc/grid-security/"
-"certificates."
+"The default location /etc/grid-security/certificates should work fine in "
+"most cases."
 msgstr ""
-"Bitte wählen Sie die Zertifikate, die in /etc/grid-security/certificates "
-"installiert werden sollen, aus."
+"Das Standard-Verzeichnis /etc/grid-security/certificates sollte in den meisten Fällen genügen."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "An alternative location can be given here if needed."
+msgstr "Ein alternativer Ort kann hier angegeben werden."

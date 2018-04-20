@@ -1,9 +1,9 @@
 Source: igtf-policy-bundle
 Section: misc
-Priority: extra
+Priority: optional
 Maintainer: Dennis van Dok <dennisvd@nikhef.nl>
 Build-Depends: debhelper (>= 8.0.0), po-debconf
-Standards-Version: 3.9.8
+Standards-Version: 4.1.3
 Homepage: http://www.igtf.net/
 Vcs-Git: https://github.com/dvandok/igtf-policy-bundle.git
 Vcs-Browser: https://github.com/dvandok/igtf-policy-bundle
@@ -13,7 +13,7 @@ Package: igtf-policy-classic
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: openssl
-Suggests: ca-certificates, fetch-crl
+Suggests: fetch-crl
 Description: IGTF classic profile for Certificate Authorities
  The Interoperable Global Trust Federation (IGTF) maintains a common trust
  base for the benefit of distributed science and research computing
@@ -28,7 +28,7 @@ Package: igtf-policy-mics
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: openssl
-Suggests: ca-certificates, fetch-crl
+Suggests: fetch-crl
 Description: IGTF MICS profile for Certificate Authorities
  The Interoperable Global Trust Federation (IGTF) maintains a common trust
  base for the benefit of distributed science and research computing
@@ -44,7 +44,7 @@ Package: igtf-policy-slcs
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: openssl
-Suggests: ca-certificates, fetch-crl
+Suggests: fetch-crl
 Description: IGTF SLCS profile for Certificate Authorities
  The Interoperable Global Trust Federation (IGTF) maintains a common trust
  base for the benefit of distributed science and research computing
@@ -60,7 +60,7 @@ Package: igtf-policy-iota
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: openssl
-Suggests: ca-certificates, fetch-crl
+Suggests: fetch-crl
 Description: IGTF IOTA profile for Certificate Authorities
  The Interoperable Global Trust Federation (IGTF) maintains a common trust
  base for the benefit of distributed science and research computing
@@ -76,7 +76,6 @@ Package: igtf-policy-unaccredited
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: openssl
-Suggests: ca-certificates
 Description: IGTF unaccredited Certificate Authorities
  The Interoperable Global Trust Federation (IGTF) maintains a common trust
  base for the benefit of distributed science and research computing
@@ -91,7 +90,6 @@ Package: igtf-policy-experimental
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: openssl
-Suggests: ca-certificates
 Description: IGTF experimental Certificate Authorities
  The Interoperable Global Trust Federation (IGTF) maintains a common trust
  base for the benefit of distributed science and research computing
