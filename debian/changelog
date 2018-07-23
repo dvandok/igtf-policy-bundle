@@ -1,3 +1,16 @@
+igtf-policy-bundle (1.92-1~bpo9+1) stretch-backports; urgency=medium
+
+  * Rebuild for stretch-backports
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 23 Jul 2018 10:07:32 +0200
+
+igtf-policy-bundle (1.92-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Added HKU CA 2 trust anchor during transitioning period (HK)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 29 Jun 2018 13:57:12 +0200
+
 igtf-policy-bundle (1.91-1~bpo9+1) stretch-backports; urgency=medium
 
   * Rebuild for stretch-backports
@@ -38,7 +51,7 @@ igtf-policy-bundle (1.89-1) unstable; urgency=medium
 igtf-policy-bundle (1.88-1) unstable; urgency=medium
 
   * New upstream releases:
-    - [.88 update]
+    - [1.88 update]
     - updated UKeScience 2B ICA based on a SHA-2 family digest (UK)
     - added new PKIUNAMgrid (2017) trust anchor for roll-over (MX)
     - [1.87 update]
