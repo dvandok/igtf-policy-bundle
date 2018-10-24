@@ -1,3 +1,11 @@
+igtf-policy-bundle (1.93-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Updated contact information for HellasGrid-CA (GR)
+    - Removed superseded IGCA CA (IN)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 24 Oct 2018 14:52:02 +0200
+
 igtf-policy-bundle (1.92-1) unstable; urgency=medium
 
   * New upstream release:
