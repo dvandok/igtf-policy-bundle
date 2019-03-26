@@ -1,3 +1,16 @@
+igtf-policy-bundle (1.97-1) unstable; urgency=medium
+
+  * New upstream release:
+  * [Changes from 1.96 to 1.97 (25 Mar 2019)]
+    - temporarily withdrawn EG-GRID 4a96b1ea for network availability
+      reasons (EG)
+  * [Changes from 1.95 to 1.96 (25 Feb 2019)]
+    - withdrawn superseded QuoVadis-Grid-ICA (1st gen) CA (BM)
+    - added new trust anchor MD-Grid-CA-T for rollover of existing CA (MD)
+    - discontinued expiring 2009 series MD-Grid-CA (MD)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 26 Mar 2019 11:22:57 -0700
+
 igtf-policy-bundle (1.95-1) unstable; urgency=medium
 
   * New upstream release:
