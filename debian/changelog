@@ -1,3 +1,10 @@
+igtf-policy-bundle (1.98-1) unstable; urgency=medium
+
+  * New upstream release:
+    - withdrawn superseded IRAN-GRID authority (IR)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 29 Apr 2019 10:31:00 +0200
+
 igtf-policy-bundle (1.97-1) unstable; urgency=medium
 
   * New upstream release:
