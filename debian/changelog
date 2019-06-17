@@ -1,3 +1,15 @@
+igtf-policy-bundle (1.101-1) unstable; urgency=medium
+
+  * New upstream release:
+  * [Changes from 1.99 to 1.101 (24 June 2019, note: 1.100 was not issued)]
+    - added new trust anchor for PolishGrid (2019) for key roll-over (PL)
+    - withdrawn discontinued CILogon OSG CA (US)
+  * [Changes from 1.98 to 1.99 (27 May 2019)]
+    - withdrawn superseded HKU CA (HK)
+    - withdrawn discontinued CyGrid CA following migration to TCS (CY)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 17 Jun 2019 16:38:17 +0200
+
 igtf-policy-bundle (1.98-1) unstable; urgency=medium
 
   * New upstream release:
