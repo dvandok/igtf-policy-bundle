@@ -1,3 +1,9 @@
+igtf-policy-bundle (1.101-2) unstable; urgency=medium
+
+  * Rebuild for a source-only upload
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Thu, 05 Sep 2019 10:48:50 +0200
+
 igtf-policy-bundle (1.101-1) unstable; urgency=medium
 
   * New upstream release:
