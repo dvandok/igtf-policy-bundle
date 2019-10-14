@@ -1,3 +1,10 @@
+igtf-policy-bundle (1.102-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Added CESNET-CA-4 ICA accredited classic CA for issuer roll-over (CZ)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 14 Oct 2019 12:18:16 +0200
+
 igtf-policy-bundle (1.101-2) unstable; urgency=medium
 
   * Rebuild for a source-only upload
