@@ -1,3 +1,13 @@
+igtf-policy-bundle (1.103-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Updated contact addresses for DigiCert (US)
+  * Regrafted InCommon IGTF Server CA onto self-signed Comodo RSA CA (US)
+  * Discontinued superfluous AddTrust External CA Root (US)
+  * Discontinued AustrianGrid CA (AT)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 27 Jan 2020 14:37:11 +0100
+
 igtf-policy-bundle (1.102-1) unstable; urgency=medium
 
   * New upstream release:
