@@ -1,3 +1,11 @@
+igtf-policy-bundle (1.104-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Reinstated AddTrust External CA Root in parallel to Comodo RSA CA 
+    to ease transitionary period (US)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Thu, 30 Jan 2020 11:10:00 +0100
+
 igtf-policy-bundle (1.103-1) unstable; urgency=medium
 
   * New upstream release:
