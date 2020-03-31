@@ -1,7 +1,18 @@
+igtf-policy-bundle (1.105-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Discontinued CERN-LCG-IOTA-CA following decommissioning by authority (CERN)
+  * Added new G4 intermediates for the GEANT TCS service and supporting 
+    self-signed USERTrust RSA Root (EU)
+  * Updated AddTrust External CA Root signing policy to support legacy UTN
+    chains for GEANT TCS G4 (EU)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 31 Mar 2020 13:07:52 +0200
+
 igtf-policy-bundle (1.104-1) unstable; urgency=medium
 
   * New upstream release:
-  * Reinstated AddTrust External CA Root in parallel to Comodo RSA CA 
+  * Reinstated AddTrust External CA Root in parallel to Comodo RSA CA
     to ease transitionary period (US)
 
  -- Dennis van Dok <dennisvd@nikhef.nl>  Thu, 30 Jan 2020 11:10:00 +0100
