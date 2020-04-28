@@ -16,7 +16,7 @@ BASE = /usr/share/igtf-policy
 PROFILES = classic mics slcs iota
 
 %:
-	dh $@ 
+	dh $@
 
 override_dh_auto_configure:
 	./configure --prefix=`pwd`/debian/tmp/$(BASE) \
