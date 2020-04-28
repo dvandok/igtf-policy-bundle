@@ -1,3 +1,13 @@
+igtf-policy-bundle (1.106-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Removed expiring AddTrust External CA Root (US)
+  * Updated legacy DutchGrid (Nikhef MS) Root CA (NL)
+  * Removed discontinued NCSA-tfca-2013 CA (US)
+  * Added TCS G4 ECC trust anchors to experimental area (EU)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 04 May 2020 09:19:08 +0200
+
 igtf-policy-bundle (1.105-2) UNRELEASED; urgency=medium
 
   * Trim trailing whitespace.
