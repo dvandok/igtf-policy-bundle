@@ -1,3 +1,9 @@
+igtf-policy-bundle (1.106-1~bpo10+1) buster-backports; urgency=medium
+
+  * Rebuild for buster-backports
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 04 May 2020 09:59:58 +0200
+
 igtf-policy-bundle (1.106-1) unstable; urgency=medium
 
   * New upstream release:
