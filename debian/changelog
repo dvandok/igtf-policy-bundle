@@ -1,3 +1,11 @@
+igtf-policy-bundle (1.108-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Added DigitalTrust classic IGTF specific and public trust IGTF CAs (AE)
+  * Updated PCS MyProxy SLCS CRL URL location (US)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Thu, 17 Dec 2020 11:44:43 +0100
+
 igtf-policy-bundle (1.107-1) unstable; urgency=medium
 
   * New upstream release:
