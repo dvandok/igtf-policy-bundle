@@ -1,3 +1,17 @@
+igtf-policy-bundle (1.108-1~bpo10+1) unstable; urgency=medium
+
+  * Rebuild for buster-backports
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 22 Dec 2020 11:10:49 +0100
+
+igtf-policy-bundle (1.108-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Added DigitalTrust classic IGTF specific and public trust IGTF CAs (AE)
+  * Updated PCS MyProxy SLCS CRL URL location (US)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Thu, 17 Dec 2020 11:44:43 +0100
+
 igtf-policy-bundle (1.107-1~bpo10+1) buster-backports; urgency=medium
 
   * Rebuild for buster-backports
