@@ -1,3 +1,18 @@
+igtf-policy-bundle (1.109-1~bpo10+1) buster-backports; urgency=medium
+
+  * Rebuild for buster-backports
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 25 Jan 2021 14:46:05 +0100
+
+igtf-policy-bundle (1.109-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Removed discontinued DM private IGTF classic CAs (AE)
+  * Removed obsolete QuoVadis-Root-CA1, under which no ICAs are left (BM)
+  * Updated QV Grid ICA G2 intermediary following its re-issuance (BM)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 18 Jan 2021 11:27:53 +0100
+
 igtf-policy-bundle (1.108-1~bpo10+1) buster-backports; urgency=medium
 
   * Rebuild for buster-backports
