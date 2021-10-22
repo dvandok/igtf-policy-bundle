@@ -1,3 +1,24 @@
+igtf-policy-bundle (1.113-1~bpo10+1) buster-backports; urgency=medium
+
+  * Rebuild for buster-backports
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 22 Oct 2021 14:43:32 +0200
+
+igtf-policy-bundle (1.113-1) unstable; urgency=medium
+
+  * New upstream release:
+  * [Changes from 1.112 to 1.113 (4 October 2021)]
+  * Suspended MD-GRID CA due to network resolution issues (MD)
+  * [Changes from 1.111 to 1.112 (16 August 2021)]
+  * Updated ANSPGrid CA with extended validity date (BR)
+  * [Changes from 1.110 to 1.111 (24 May 2021)]
+  * Removed discontinued NERSC-SLCS CA (US)
+  * Removed discontinued MYIFAM CA (MY)
+  * [Changes from 1.109 to 1.110 (22 March 2021)]
+  * Removed INFN-CA-2015 that has disappeared operationally (IT)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Thu, 30 Sep 2021 16:16:58 +0200
+
 igtf-policy-bundle (1.109-1~bpo10+1) buster-backports; urgency=medium
 
   * Rebuild for buster-backports
