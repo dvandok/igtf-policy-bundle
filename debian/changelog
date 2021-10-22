@@ -1,3 +1,9 @@
+igtf-policy-bundle (1.113-1~bpo11+1) bullseye-backports; urgency=medium
+
+  * Rebuild for bullseye-backports.
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 22 Oct 2021 14:52:26 +0200
+
 igtf-policy-bundle (1.113-1) unstable; urgency=medium
 
   * New upstream release:
