@@ -1,3 +1,16 @@
+igtf-policy-bundle (1.114-1~bpo11+1) bullseye-backports; urgency=medium
+
+  * Rebuild for bullseye-backports.
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Thu, 27 Jan 2022 10:28:18 +0100
+
+igtf-policy-bundle (1.114-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Extended validity for SlovakGrid issuing CA (SK)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 18 Jan 2022 17:32:21 +0100
+
 igtf-policy-bundle (1.113-1~bpo11+1) bullseye-backports; urgency=medium
 
   * Rebuild for bullseye-backports.
