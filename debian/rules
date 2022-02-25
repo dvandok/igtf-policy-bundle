@@ -14,6 +14,7 @@
 BASE = /usr/share/igtf-policy
 
 PROFILES = classic mics slcs iota
+DEBVER := $(shell dpkg-parsechangelog -SVersion)
 
 %:
 	dh $@
@@ -46,7 +47,7 @@ profile_files:
 	cd debian && for profile in $(PROFILES); do \
 	    sed -e "s/@PROFILE@/$$profile/g" < config.in > igtf-policy-$$profile.config ; \
 	    sed -e "s/@PROFILE@/$$profile/g" < postinst.in > igtf-policy-$$profile.postinst ; \
-	    sed -e "s/@PROFILE@/$$profile/g" < prerm.in > igtf-policy-$$profile.prerm ; \
+	    sed -e "s/@PROFILE@/$$profile/g;s/@DEBVER@/$(DEBVER)/" < prerm.in > igtf-policy-$$profile.prerm ; \
 	    sed -e "s/@PROFILE@/$$profile/g" < templates-translated.in > igtf-policy-$$profile.templates ; \
 	done
 	cd debian && for profile in $(PROFILES) unaccredited experimental; do \
