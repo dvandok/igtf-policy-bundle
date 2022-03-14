@@ -7,11 +7,18 @@ set -e
 . /usr/share/debconf/confmodule
 
 profile=@PROFILE@
+debver=@DEBVER@
 
 location=/etc/grid-security/certificates
 if db_get igtf-policy/location ; then
     location="$RET"
 fi
+
+clean_symlinks() {
+    for f in `find /usr/share/igtf-policy/${profile}/ -maxdepth 1 -not -type d -print` ; do
+	rm -f "$location"/`basename $f`
+    done
+}
 
 case "$1" in
     remove)
@@ -29,12 +36,20 @@ case "$1" in
 	    fi
 	fi
 	;;
-    upgrade|deconfigure)
+    upgrade)
+        # normal upgrade should remove the symlinks now
+        # in case the new version deprecates a CA. But
+        # a dpkg-reconfigure will also call upgrade with
+        # the same version and in that case we want to
+        # keep all the symlinks.
+        if [ "$2" != "$debver" ]; then
+	    clean_symlinks
+        fi
+        ;;
+    deconfigure)
 	# Remove all the links that were made to the profile files,
 	# but leave the CRLs that were downloaded.
-	for f in `find /usr/share/igtf-policy/${profile}/ -maxdepth 1 -not -type d -print` ; do
-	    rm -f "$location"/`basename $f`
-    	done
+        clean_symlinks
     ;;
 
     failed-upgrade)

@@ -1,3 +1,10 @@
+
+igtf-policy-bundle (1.114-2) unstable; urgency=medium
+
+  * Prevent erasing symbolic links on reconfigure. Closes: 1006410
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 25 Feb 2022 10:57:51 +0100
+
 igtf-policy-bundle (1.114-1~bpo11+1) bullseye-backports; urgency=medium
 
   * Rebuild for bullseye-backports.
