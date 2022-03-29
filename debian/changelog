@@ -1,3 +1,12 @@
+igtf-policy-bundle (1.115-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Removed obsolete CNRS2 CAs, superseded by AC-GRID-FR hierarchy (FR)
+  * Add supplementary BCDR download location for UGRID-G2 CRL (UA)
+  * Extended validity period of HPCI CA (JP)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 29 Mar 2022 14:46:39 +0200
+
 igtf-policy-bundle (1.114-2) unstable; urgency=medium
 
   * Prevent erasing symbolic links on reconfigure. Closes: 1006410
