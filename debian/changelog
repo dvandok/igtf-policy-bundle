@@ -1,3 +1,18 @@
+igtf-policy-bundle (1.115-1+bpo11+1) bullseye-backports; urgency=medium
+
+  * Rebuild for bullseye-backports
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 04 Apr 2022 11:18:45 +0200
+
+igtf-policy-bundle (1.115-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Removed obsolete CNRS2 CAs, superseded by AC-GRID-FR hierarchy (FR)
+  * Add supplementary BCDR download location for UGRID-G2 CRL (UA)
+  * Extended validity period of HPCI CA (JP)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 29 Mar 2022 14:46:39 +0200
+
 igtf-policy-bundle (1.114-2~bpo11+1) bullseye-backports; urgency=medium
 
   * Rebuild for bullseye-backports
