@@ -1,3 +1,10 @@
+igtf-policy-bundle (1.116-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Updated intermediate CERN Grid CA ICA with extended validity (CERN)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 26 Apr 2022 09:11:28 +0200
+
 igtf-policy-bundle (1.115-1) unstable; urgency=medium
 
   * New upstream release:
