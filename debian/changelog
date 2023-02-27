@@ -1,3 +1,23 @@
+igtf-policy-bundle (1.118-1) unstable; urgency=medium
+
+  * New upstream release:
+  * [Changes from 1.116 to 1.117 (27 February 2023)
+  * Updated GridCanada CA with re-issued SHA-2 based root (CA)
+  * Updated CILogon basic, silver, and openid with re-issued SHA-2 certs (US)
+  * Updated UKeScience Root (2007) re-issued with SHA-2, retired 2A ICA (UK)
+  * [Changes from 1.116 to 1.117 (29 August 2022)]
+  * Add new intermediate ICA DigiCert Grid-TLS (US)
+  * Add new intermediate ICA DigiCert Grid-Client-RSA2048-SHA256-2022-CA1 (US)
+  * Removed discontinued NCSA-slcs-2013 following end of XSEDE (US)
+  * Removed discontinued PSC-Myproxy-CA following end of XSEDE (US)
+  * RPM packaging: rpm packages are now signed using a SHA-256 digest, file 
+    digests using algo 8 (SHA-256), and the yum/dnf listings are signed with
+    SHA-256 as well. This removes support for yum-based distributions <=EL5 
+    (for which ELS ended in November 2020), but allows installation of 
+    packages on EL9 (Rocky9, AlmaLinux9, &c) that require SHA-256.
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 27 Feb 2023 15:09:19 +0100
+
 igtf-policy-bundle (1.116-1) unstable; urgency=medium
 
   * New upstream release:
