@@ -1,3 +1,14 @@
+igtf-policy-bundle (1.119-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Updated UKeScience Root (2007) with consistent string encodings (UK)
+  * Removed obsolete SHA1 subordinates DigiCertGridTrustCA-Classic
+    and DigiCertGridCA-1-Classic from DigiCert, reflected in RPDNC namespaces
+  * Experimental (non-accredited) new InCommon RSA IGTF Server CA 2 (ICA under
+    Sectigo USERTrust RSA root, for which namespaces have been updated) (US)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 13 Mar 2023 12:15:46 +0100
+
 igtf-policy-bundle (1.118-1) unstable; urgency=medium
 
   * New upstream release:
