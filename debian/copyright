@@ -6,22 +6,6 @@ Files: *
 Copyright: 2006-2014 Members of the IGTF <info@eugridpma.org>
 License: CC-BY-3.0
 
-Files: src/accredited/AAACertificateServices.pem
-Copyright: 2004 Comodo CA Limited
-License: MPL-1.1
-
-Files: src/accredited/AddTrust-External-CA-Root.pem
-Copyright: 2000 Addtrust AB
-License: MPL-1.1
-
-Files: src/accredited/QuoVadis-Root-CA1.pem
-Copyright: 2001 QuoVadis Limited
-License: MPL-1.1
-
-Files: src/accredited/UTN-USERFirst-Hardware.pem
-Copyright: 1999 The USERTRUST Network
-License: MPL-1.1
-
 License: CC-BY-3.0
  Creative Commons Attribution 3.0 Unported
  .
