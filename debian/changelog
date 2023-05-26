@@ -1,3 +1,12 @@
+igtf-policy-bundle (1.120-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Added transitional CDP mirror URLs for retiring DigitalTrust CAs (AE)
+  * Removed discontinued NIIF-Root-CA-2 (HU)
+  * Removed expiring GermanGrid (GridKA CrossGrid) CA (DE)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 26 May 2023 12:08:51 +0200
+
 igtf-policy-bundle (1.119-1) unstable; urgency=medium
 
   * New upstream release:
