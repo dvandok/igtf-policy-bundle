@@ -1,3 +1,11 @@
+igtf-policy-bundle (1.121-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Added accredited (classic) InCommon RSA IGTF Server CA 3 under the
+    Sectigo USERTrust RSA root, for which namespaces have been updated (US)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 19 Jun 2023 09:15:22 +0200
+
 igtf-policy-bundle (1.120-1) unstable; urgency=medium
 
   * New upstream release:
