@@ -1,4 +1,4 @@
-igtf-policy-bundle (1.122-1) unstable; urgency=medium
+igtf-policy-bundle (1.122-1~deb12u1) stable; urgency=important
 
   * New Upstream release:
   * Added private trust hierarchy for GEANT (Research and Education) TCS (EU)
