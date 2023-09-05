@@ -1,3 +1,11 @@
+igtf-policy-bundle (1.123-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Add ECC private trust hierarchy for GEANT (Research and Education) TCS (EU)
+  * Added accredited private trust eMudhra IGTF root and issuers (IN)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 05 Sep 2023 13:23:44 +0200
+
 igtf-policy-bundle (1.122-1) unstable; urgency=medium
 
   * New Upstream release:
