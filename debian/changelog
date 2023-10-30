@@ -1,3 +1,15 @@
+igtf-policy-bundle (1.124-1) unstable; urgency=medium
+
+  * New upstream release:
+  * updated contact meta-data for ArmeSFo authority (AM)
+  * removed discontinued AEGIS authority (RS)
+  * removed suspended KENET Root and issuing CAs (KE)
+  * removed suspended SDG-G2 authority (CN)
+  * removed suspended CNIC authority (CN)
+  * removed all four discontinued DigitalTrust CAs operated by their issuer (AE)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 30 Oct 2023 14:19:35 +0100
+
 igtf-policy-bundle (1.123-1) unstable; urgency=medium
 
   * New upstream release:
