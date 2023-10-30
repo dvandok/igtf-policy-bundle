@@ -1,3 +1,9 @@
+igtf-policy-bundle (1.123-1~bpo12+1) bookworm-backports; urgency=medium
+
+  * Backport for bookworm
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 30 Oct 2023 14:44:16 +0100
+
 igtf-policy-bundle (1.123-1) unstable; urgency=medium
 
   * New upstream release:
