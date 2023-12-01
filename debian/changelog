@@ -1,3 +1,10 @@
+igtf-policy-bundle (1.125-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Updated root certificate ArmeSFo CA with extended validity (AM)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 01 Dec 2023 09:38:33 +0100
+
 igtf-policy-bundle (1.124-1) unstable; urgency=medium
 
   * New upstream release:
