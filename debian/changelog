@@ -1,3 +1,11 @@
+igtf-policy-bundle (1.126-1) unstable; urgency=medium
+
+  * New upstream release:
+  * removed replaced InCommon IGTF Server CA and associated Comodo RSA CA (US)
+  * removed discontinued UNLPGrid CA (CL)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 18 Dec 2023 15:21:47 +0100
+
 igtf-policy-bundle (1.125-1) unstable; urgency=medium
 
   * New upstream release:
