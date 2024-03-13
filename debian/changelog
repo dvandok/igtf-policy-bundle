@@ -1,3 +1,9 @@
+igtf-policy-bundle (1.128-1) unstable; urgency=medium
+
+  * updated CRL download URL for ArmeSFo (AM)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 13 Mar 2024 16:04:54 +0100
+
 igtf-policy-bundle (1.127-1) unstable; urgency=medium
 
   * added supplementary issuing CA Issuing CA IGTF - C5 - 1 for eMudhra (IN)
