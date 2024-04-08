@@ -1,8 +1,49 @@
-igtf-policy-bundle (1.123-1~bpo12+1) bookworm-backports; urgency=medium
+igtf-policy-bundle (1.128-1~bpo12+1) bookworm-backports; urgency=medium
 
   * Backport for bookworm
 
- -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 30 Oct 2023 14:44:16 +0100
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 08 Apr 2024 11:51:46 +0200
+
+igtf-policy-bundle (1.128-1) unstable; urgency=medium
+
+  * updated CRL download URL for ArmeSFo (AM)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 13 Mar 2024 16:04:54 +0100
+
+igtf-policy-bundle (1.127-1) unstable; urgency=medium
+
+  * added supplementary issuing CA Issuing CA IGTF - C5 - 1 for eMudhra (IN)
+  * removed discontinued QuoVadis CAs QuoVadis-Grid-ICA-G2 QuoVadis-Root-CA2G3
+    QuoVadis-Root-CA2 and QuoVadis-Root-CA3G3 (BM)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 20 Feb 2024 10:22:09 +0100
+
+igtf-policy-bundle (1.126-1) unstable; urgency=medium
+
+  * New upstream release:
+  * removed replaced InCommon IGTF Server CA and associated Comodo RSA CA (US)
+  * removed discontinued UNLPGrid CA (CL)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 18 Dec 2023 15:21:47 +0100
+
+igtf-policy-bundle (1.125-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Updated root certificate ArmeSFo CA with extended validity (AM)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Fri, 01 Dec 2023 09:38:33 +0100
+
+igtf-policy-bundle (1.124-1) unstable; urgency=medium
+
+  * New upstream release:
+  * updated contact meta-data for ArmeSFo authority (AM)
+  * removed discontinued AEGIS authority (RS)
+  * removed suspended KENET Root and issuing CAs (KE)
+  * removed suspended SDG-G2 authority (CN)
+  * removed suspended CNIC authority (CN)
+  * removed all four discontinued DigitalTrust CAs operated by their issuer (AE)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 30 Oct 2023 14:19:35 +0100
 
 igtf-policy-bundle (1.123-1) unstable; urgency=medium
 
