@@ -1,5 +1,9 @@
 igtf-policy-bundle (1.128-1~deb12u1) bookworm; urgency=important
 
+  * Proposed update to address CAB Forum S/MIME policy change
+
+igtf-policy-bundle (1.128-1) unstable; urgency=medium
+
   * updated CRL download URL for ArmeSFo (AM)
 
  -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 13 Mar 2024 16:04:54 +0100
