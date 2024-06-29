@@ -1,3 +1,10 @@
+igtf-policy-bundle (1.130-1) unstable; urgency=medium
+
+  * New upstream release:
+  * resolve subjnectDN nameformat compatibility issues trust anchor metadata
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Sat, 29 Jun 2024 13:01:44 +0200
+
 igtf-policy-bundle (1.129-1) unstable; urgency=medium
 
   * New upstream release:
