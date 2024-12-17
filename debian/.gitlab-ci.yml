@@ -2,6 +2,7 @@
 
 stages:
   - package
+  - deploy
 
 package_bookworm:
   stage: package
@@ -15,3 +16,16 @@ package_bookworm:
   artifacts:
     paths:
       - build-area/
+
+publish:
+  stage: deploy
+  tags:
+    - shell
+  script:
+    - |
+      for i in build-area/*.deb; do
+        j=basename${i}
+        curl --location --header "JOB-TOKEN: ${CI_JOB_TOKEN}" \
+           --upload-file ${i} \
+           "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/igtf-policy-bundle/${CI_COMMIT_TAG}/${j}"
+      done
