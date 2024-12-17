@@ -8,7 +8,7 @@ package_bookworm:
   tags:
     - shell
   script:
-    - mkdir ../build-area
-    - uscan --destdir=../build-area/ --download --download-current-version
+    - mkdir build-area
+    - uscan --destdir=build-area/ --download --download-current-version
     - dch --bpo ""
-    - gbp buildpackage --git-overlay --git-export-dir=../build-area --git-ignore-branch --git-ignore-new
+    - gbp buildpackage --git-overlay --git-export-dir=build-area/ --git-ignore-branch --git-ignore-new
