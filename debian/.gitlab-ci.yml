@@ -1,3 +1,5 @@
+# Pipeline for building debian package
+
 stages:
   - package
 
