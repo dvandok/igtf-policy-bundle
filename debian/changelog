@@ -1,3 +1,10 @@
+igtf-policy-bundle (1.132-1) unstable; urgency=medium
+
+  * New upstream release:
+  * added new trust anchor for TRGRID transition (TR)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 17 Dec 2024 12:02:41 +0100
+
 igtf-policy-bundle (1.131-2) unstable; urgency=medium
 
   * Rebuild for source-only upload
