@@ -1,3 +1,14 @@
+igtf-policy-bundle (1.133-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Updated re-issued GridCanada root with extended validity period (CA)
+  * Added GEANT TCS Generation 5 TLS and Auth ICAs and corresponding HARICA
+    and private trust roots (EU)
+  * updated SHA-256 root CA for RDIG mitigating EL9/FedoraCore deprication
+  * MARGI put on hold due to domainname resolution issues (MK)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 17 Feb 2025 12:06:35 +0100
+
 igtf-policy-bundle (1.132-1) unstable; urgency=medium
 
   * New upstream release:
