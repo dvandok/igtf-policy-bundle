@@ -1,3 +1,11 @@
+igtf-policy-bundle (1.134-1) unstable; urgency=medium
+
+  * New upstream release:
+  * New ANSPGrid CA 2 roll-over for root-issuer key pair (BR)
+  * Withdrawn discontinued AC-GRID-FR series authorities (FR)
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 12 Mar 2025 12:30:08 +0100
+
 igtf-policy-bundle (1.133-1) unstable; urgency=medium
 
   * New upstream release:
