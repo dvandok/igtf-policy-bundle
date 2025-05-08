@@ -1,3 +1,11 @@
+igtf-policy-bundle (1.135-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Updated SlovakGrid trust anchor with extended validity (SK)
+  * Withdrawn discontinued HPCI CA (JP)
+  
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Thu, 08 May 2025 14:32:53 +0200
+
 igtf-policy-bundle (1.134-1) unstable; urgency=medium
 
   * New upstream release:
