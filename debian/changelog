@@ -1,3 +1,9 @@
+igtf-policy-bundle (1.137-1~bpo13+1) trixie-backports; urgency=medium
+
+  * Backport for Trixie
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Wed, 01 Oct 2025 15:30:08 +0200
+
 igtf-policy-bundle (1.137-1) unstable; urgency=medium
 
   * New upstream release:
