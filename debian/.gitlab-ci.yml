@@ -1,12 +1,55 @@
+# Pipeline for building debian package
+
 stages:
   - package
+  - deploy
+  - release
+
+variables:
+  PACKAGE_REGISTRY_URL: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/igtf-policy-bundle"
 
 package_bookworm:
   stage: package
   tags:
     - shell
   script:
-    - mkdir ../build-area
-    - uscan --destdir=../build-area/ --download --download-current-version
+    - mkdir build-area
+    - uscan --destdir=build-area/ --download --download-current-version
     - dch --bpo ""
-    - gbp buildpackage --git-overlay --git-export-dir=../build-area --git-ignore-branch
+    - gbp buildpackage --git-overlay --git-export-dir=build-area/ --git-ignore-branch --git-ignore-new --no-sign
+  artifacts:
+    paths:
+      - build-area/
+
+publish:
+  stage: deploy
+  tags:
+    - shell
+  script: 
+    - |
+      for i in build-area/*.deb; do
+        j=`basename ${i}`
+        curl --location --header "JOB-TOKEN: ${CI_JOB_TOKEN}" \
+          --upload-file ${i} \
+          "${PACKAGE_REGISTRY_URL}/${CI_COMMIT_TAG}/${j}"
+      done
+  rules:
+    - if: $CI_COMMIT_TAG
+
+release_job:
+  stage: release
+  tags:
+    - docker
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  rules:
+    - if: $CI_COMMIT_TAG                 # Run this job when a tag is created
+  script:
+    - echo "running release_job"
+    - |
+      release-cli create --name "Release $CI_COMMIT_TAG" --tag-name $CI_COMMIT_TAG \
+        --assets-link "{\"name\":\"igtf-policy-classic_${CI_COMMIT_TAG}_all.deb\",\"url\":\"${PACKAGE_REGISTRY_URL}/${CI_COMMIT_TAG}/igtf-policy-classic_${CI_COMMIT_TAG}_all.deb\"}" \
+        --assets-link "{\"name\":\"igtf-policy-mics_${CI_COMMIT_TAG}_all.deb\",\"url\":\"${PACKAGE_REGISTRY_URL}/${CI_COMMIT_TAG}/igtf-policy-mics_${CI_COMMIT_TAG}_all.deb\"}" \
+        --assets-link "{\"name\":\"igtf-policy-slcs_${CI_COMMIT_TAG}_all.deb\",\"url\":\"${PACKAGE_REGISTRY_URL}/${CI_COMMIT_TAG}/igtf-policy-slcs_${CI_COMMIT_TAG}_all.deb\"}" \
+        --assets-link "{\"name\":\"igtf-policy-iota_${CI_COMMIT_TAG}_all.deb\",\"url\":\"${PACKAGE_REGISTRY_URL}/${CI_COMMIT_TAG}/igtf-policy-iota_${CI_COMMIT_TAG}_all.deb\"}" \
+
+    
