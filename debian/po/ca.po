@@ -1,0 +1,100 @@
+# Catalan translation of igtf-policy-bundle's debconf messages
+# Copyright © 2025 poc senderi <pocsenderi@protonmail.com>
+# This file is distributed under the same license as the igtf-policy-bundle package.
+# poc senderi <pocsenderi@protonmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: igtf-policy-bundle\n"
+"Report-Msgid-Bugs-To: igtf-policy-bundle@packages.debian.org\n"
+"POT-Creation-Date: 2017-07-24 17:44+0200\n"
+"PO-Revision-Date: 2025-11-05 07:37+0100\n"
+"Last-Translator: poc senderi <pocsenderi@protonmail.com>\n"
+"Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid "Trust IGTF @PROFILE@ CAs by default?"
+msgstr "Voleu, de manera predeterminada, confiar en les CA d'IGTF @PROFILE@?"
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid ""
+"Trusted IGTF Certification Authority certificates are installed in $"
+"{location}."
+msgstr ""
+"Els certificats de confiança de la IGTF Certification Authority estan "
+"instal·lats a ${location}."
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid ""
+"Accept this option to have certificates included by default unless they are "
+"explicitly excluded. Reject it to choose the reverse policy, excluding them "
+"unless explicitly included."
+msgstr ""
+"Accepteu aquesta opció per a tenir inclosos els certificats de manera "
+"predeterminada tret que hagin estat explícitament exclosos. Refuseu per "
+"triar la política inversa, excloent-los tots excepte aquells que s'hagin "
+"inclòs implícitament."
+
+#. Type: boolean
+#. Description
+#: ../templates.in:2001
+msgid "You will then have the opportunity to define the list of exceptions."
+msgstr "Tindreu la possibilitat de definir la llista d'excepcions."
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:3001
+msgid "Certificates to explicitly exclude:"
+msgstr "Certificats que explícitament s'exclouran:"
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:3001
+msgid ""
+"Please select which certificates should not be installed in ${location}."
+msgstr "Seleccioneu quins certificats no s'han d'instal·lar a ${location}."
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:4001
+msgid "Certificates to explicitly include:"
+msgstr "Certificats que explícitament s'inclouran:"
+
+#. Type: multiselect
+#. Description
+#: ../templates.in:4001
+msgid "Please select which certificates should be installed in ${location}."
+msgstr "Seleccioneu quins certificats s'han d'instal·lar a ${location}."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "Installation directory of the certificates:"
+msgstr "Directori d'instal·lació dels certificats:"
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid ""
+"The default location /etc/grid-security/certificates should work fine in "
+"most cases."
+msgstr ""
+"La ubicació predeterminada, «/etc/grid-security/certificates», hauria "
+"d'anar bé en la majoria de casos."
+
+#. Type: string
+#. Description
+#: ../templates.in:5001
+msgid "An alternative location can be given here if needed."
+msgstr "Si convingués, es pot posar aquí una ubicació alternativa."
