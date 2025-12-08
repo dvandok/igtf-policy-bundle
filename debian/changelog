@@ -1,3 +1,20 @@
+igtf-policy-bundle (1.138-1~bpo13+1) trixie-backports; urgency=medium
+
+  * Backport for Trixie
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 08 Dec 2025 11:21:33 +0100
+
+igtf-policy-bundle (1.138-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Add new REUNA Issuing CA and updated RPDNC for HLCA emSign Trusted Root (CL)
+  * Withdraw superseded KEK CA (JP)
+  * Update RCauth Pilot ICA G1 with extended validity period (EU)
+  * [Debconf translation updates]
+  * Catalan (Carles Pina i Estany). Closes: #1120091
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Mon, 01 Dec 2025 11:40:38 +0100
+  
 igtf-policy-bundle (1.137-1~bpo13+1) trixie-backports; urgency=medium
 
   * Backport for Trixie
