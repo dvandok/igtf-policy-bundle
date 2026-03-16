@@ -5,9 +5,8 @@ Maintainer: Dennis van Dok <dennisvd@nikhef.nl>
 Build-Depends: debhelper-compat (= 13), po-debconf
 Standards-Version: 4.7.3
 Homepage: https://www.igtf.net/
-Vcs-Git: https://github.com/dvandok/igtf-policy-bundle.git
-Vcs-Browser: https://github.com/dvandok/igtf-policy-bundle
-
+Vcs-Git: https://salsa.debian.org/dennisvd/igtf-policy-bundle.git
+Vcs-Browser: https://salsa.debian.org/dennisvd/igtf-policy-bundle
 
 Package: igtf-policy-classic
 Architecture: all
