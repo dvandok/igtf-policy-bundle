@@ -1,4 +1,4 @@
-igtf-policy-bundle (1.139-1) unstable; urgency=medium
+igtf-policy-bundle (1.139-1) UNRELEASED; urgency=medium
 
   * New upstream release:
   * Update ArmeSFo CA re-issued based on SHA-2 family digest (AM)
