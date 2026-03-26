@@ -1,3 +1,12 @@
+igtf-policy-bundle (1.139-1) unstable; urgency=medium
+
+  * New upstream release:
+  * Update ArmeSFo CA re-issued based on SHA-2 family digest (AM)
+  * The IGTF DCVOTA assurance profile has been added. For details, please
+    refer to https://www.igtf.net/ap/dcvota/
+
+ -- Dennis van Dok <dennisvd@nikhef.nl>  Tue, 17 Mar 2026 12:14:35 +0100
+
 igtf-policy-bundle (1.138-1~bpo12+1) bookworm-backports; urgency=medium
 
   * Backport for bookworm
